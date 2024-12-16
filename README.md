@@ -3,10 +3,10 @@ a quick and dirty addition to gromit-mpx.  Memory leaks galore, but very usable.
 
 This project makes use of <a href="https://github.com/bk138/gromit-mpx">gromit-mpx</a>.  My only addition is the gui.
 
-<img src="https://github.com/cw9000/gromit-mpx-gui/data/on_kde_x11_gui.png"/>
+<img src="https://github.com/cw9000/gromit-mpx-gui/blob/main/data/on_kde_x11_gui.png"/>
 
 
-<img src="https://github.com/cw9000/gromit-mpx-gui/data/gui-menu.png"/>
+<img src="https://github.com/cw9000/gromit-mpx-gui/blob/main/data/gui-menu.png"/>
 
 
 # Install
