@@ -1,0 +1,24 @@
+#ifndef BUILD_CONFIG_H
+#define BUILD_CONFIG_H
+
+/* Define to the full name of this package. */
+#define PACKAGE_NAME "gromit-mpx"
+
+/* Define to the home page for this package. */
+#define PACKAGE_URL "https://github.com/bk138/gromit-mpx"
+
+/* Define to the version of this package. */
+#define PACKAGE_VERSION "${version}"
+
+/* The package's locale domain. */
+#define PACKAGE_LOCALE_DOMAIN "${LOCALE_DOMAIN}"
+
+/* The directory where the package's translations reside. */
+#define PACKAGE_LOCALE_DIR "${CMAKE_INSTALL_PREFIX}/${CMAKE_INSTALL_DATADIR}/locale"
+
+#define SYSCONFDIR "${CMAKE_INSTALL_FULL_SYSCONFDIR}"
+
+/* This is defined when libappindicator is not libayatana-libappindicator. */
+#cmakedefine APPINDICATOR_IS_LEGACY 1
+
+#endif /* BUILD_CONFIG_H */

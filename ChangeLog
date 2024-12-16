@@ -1,0 +1,3667 @@
+commit 0355bf35d89248edd48b468fa5b16a1a561408ad
+Author: Christian Beier <info@christianbeier.net>
+Date:   Mon Sep 9 20:38:10 2024 +0200
+
+    AppStream: add 1.7.0 release notes
+
+commit 64a29e6678f431e98b75f912780e748ef50b6f41
+Author: Christian Beier <info@christianbeier.net>
+Date:   Mon Sep 9 20:34:20 2024 +0200
+
+    CMake: bump minor version
+
+commit ef20a8ecd978438535fa2556cdb21054ae8ad92b
+Author: Christian Beier <info@christianbeier.net>
+Date:   Mon Sep 9 20:33:22 2024 +0200
+
+    NEWS: update
+
+commit 21a6d248020d5c9dcb6bb97e11e62c6a1b4655e9
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sat Mar 30 08:10:54 2024 +0100
+
+    AppStream: augment description
+
+commit 65444415c90dc00896086f973630657ea47eeccf
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sat Mar 30 00:38:44 2024 +0100
+
+    po: translate "Edit Config" menu item in all languages
+    
+    re #110
+
+commit df8114a6e85ce041678e4153b8b5b730c123f9df
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sat Mar 30 00:31:19 2024 +0100
+
+    main,callbacks: add menu entry for easy user config file editing
+    
+    re #110
+
+commit c7ff625b2372a1aaf550357df22b7bb299f280ed
+Author: Christian Beier <info@christianbeier.net>
+Date:   Fri Mar 29 23:44:54 2024 +0100
+
+    data: include all tools and link to README in default config
+    
+    re #110
+
+commit 14b1953c6c0aa03dfc86bdec0dd081b05a57898f
+Author: Christian Beier <info@christianbeier.net>
+Date:   Fri Mar 29 23:02:08 2024 +0100
+
+    test: add tool multi-user integration test
+    
+    Rather hacked up quickly but does the job for now...
+    
+    Closes #204
+
+commit 2ff2061d3d2f86059f14e8992c1dd200de4d1016
+Author: Christian Beier <info@christianbeier.net>
+Date:   Mon Mar 25 20:28:00 2024 +0100
+
+    coordlist_ops: fix header guard naming
+
+commit 91a8dffd9868ea1716f19421cc39f8e7df9e355e
+Author: Christian Beier <info@christianbeier.net>
+Date:   Mon Mar 25 20:26:30 2024 +0100
+
+    drawing: move coord_list* functions to coordlist_ops
+
+commit 70e8f697513288f57166365d490144a00ebebc40
+Author: Christian Beier <info@christianbeier.net>
+Date:   Mon Mar 25 20:01:24 2024 +0100
+
+    README: link tool screencasts
+
+commit 4a90787531aa5b616c1177f6162bf567f38fb0f3
+Author: Christian Beier <info@christianbeier.net>
+Date:   Mon Mar 25 18:10:17 2024 +0100
+
+    Add animated tool screencasts
+    
+    ...made by Pascal Niklaus.
+
+commit 4a19157ff85714553145578f5d05b99705cacb90
+Author: pascal-niklaus <pascal.niklaus@ieu.uzh.ch>
+Date:   Sun Mar 24 11:04:22 2024 +0100
+
+    main: add unlimited (100x) undo buffer with compression
+    
+    * main: compression
+    
+    * main: undo buffer lz4 compression
+    
+    * main: undo buffer lz4 compression
+    
+    * undo-unrelated code removed
+    
+    * undo-unrelated code removed, 2nd attempt
+    
+    * CMakelist fixed
+    
+    * --amend
+    
+    ---------
+    
+    Co-authored-by: Christian Beier <info@christianbeier.net>
+
+commit ecd22fe4cb1cbdcd4673b60fe24748634b1ea418
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sun Mar 24 10:16:30 2024 +0100
+
+    .clang-format: add
+    
+    re #196
+
+commit 19a55699e23ff63106c12f34f30aa8f093a44c65
+Author: pascal-niklaus <pascal.niklaus@ieu.uzh.ch>
+Date:   Fri Mar 22 09:51:22 2024 +0100
+
+    src: add new tools SMOOTH and ORTHOGONAL
+    
+    * new tools
+    
+    * ortho and smooth rebased on current master
+    
+    * closed-curve now also for orthogonal pen
+    
+    * closed-curve now also for orthogonal pen
+    
+    * coordlist fixed again for smooth
+    
+    * orthogonal and smooth now configurable
+    
+    * smooth renamed to coordlist_ops, smooth_priv.h removed
+    
+    * config, callbacks: snapdist was uninitialized in config; redundant lines removed in callbacks
+    
+    * callback: prevent crash upon empty coordlist
+    
+    * README: smooth and orthogonal tool descriptions
+
+commit f9f1090e8f4a8a613488ce1feba7b16ca52d338a
+Author: Christian Beier <info@christianbeier.net>
+Date:   Thu Mar 21 20:02:29 2024 +0100
+
+    README: make it clearer what to expect under Wayland
+    
+    re #197, #127, #121, #106, #103
+
+commit 040ca1eabd4f136d87cfa9e2c2667b1fbfb6f6a3
+Author: Christian Beier <info@christianbeier.net>
+Date:   Tue Mar 12 14:22:36 2024 +0100
+
+    AppStream: shorten summary
+
+commit 744e81b23f462808770399ad1f078d01bba27442
+Author: Christian Beier <info@christianbeier.net>
+Date:   Tue Mar 12 08:52:36 2024 +0100
+
+    ChangeLog: update
+
+commit 7db82a00a236f9b5f2dcfa2f660ce1c9b336d0c2
+Author: Christian Beier <info@christianbeier.net>
+Date:   Tue Mar 12 08:51:33 2024 +0100
+
+    AppStream: add 1.6.0 release notes
+
+commit b2b7fe7a7e687db4322c5367600f58ccad1c23d9
+Author: Christian Beier <info@christianbeier.net>
+Date:   Tue Mar 12 08:47:44 2024 +0100
+
+    CMake: bump minor version
+
+commit e54b9ba4bc155781a70ccfbb22d2b913c19e007c
+Author: Christian Beier <info@christianbeier.net>
+Date:   Tue Mar 12 08:47:12 2024 +0100
+
+    NEWS: update
+
+commit 502c1a55d1c0cd62ce8869bd8ed1437a8d7a8b59
+Author: Christian Beier <info@christianbeier.net>
+Date:   Mon Mar 11 11:40:14 2024 +0100
+
+    README: document arrowtype config
+
+commit aa1c807f80f485f18102598f10b41f22fa1e3058
+Author: pascal-niklaus <pascal.niklaus@ieu.uzh.ch>
+Date:   Mon Mar 11 08:54:38 2024 +0100
+
+    drawing,config,callbacks: add arrowtype option that allows to set arrow position
+    
+    * drawing, config, callbacks: add arrowtype option allowing arrow heads at both line ends
+    
+    re #67
+    
+    * main.h: enum names changed for arrow types
+    
+    * config: don't set arrow type to none when size is defined
+    
+    ---------
+    
+    Co-authored-by: Christian Beier <info@christianbeier.net>
+
+commit c0886ec86a61e0ef9c3db6119a5d536507bb7ec2
+Author: Christian Beier <info@christianbeier.net>
+Date:   Mon Mar 11 08:49:50 2024 +0100
+
+    README: fix typo
+
+commit ed1456349e9e13a9ade584514a33b17823c4406b
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sat Mar 2 22:47:42 2024 +0100
+
+    po: update Portuguese (Brazil) translation
+
+commit 0dd37bd0b1978a8baae2968f99467f07358737b4
+Author: Renato Lima <natenho@gmail.com>
+Date:   Fri Oct 15 02:44:46 2021 -0300
+
+    po: add Portuguese (Brazil) translation
+
+commit 4cec82eb984ad7bd94ec5339f4ec5222b1743150
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sat Mar 2 13:27:55 2024 +0100
+
+    README: document LINE and RECT tools
+    
+    re #67
+
+commit e914dc0bc829077bfdfc4cac7190da81dea78856
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sat Mar 2 13:18:04 2024 +0100
+
+    callbacks: update copyright year
+
+commit 42c9e30e1f938ac1a278257f28e79dccab6da1f1
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sat Mar 2 13:17:24 2024 +0100
+
+    callbacks: update authors in About dialog
+
+commit ec726f438e2a81dd02414427cd87ccc1f54c16d7
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sat Mar 2 12:37:33 2024 +0100
+
+    AUTHORS: update
+
+commit 3cf1116bbbfabce635f196f1c7c98b77c3a04567
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sat Mar 2 12:24:34 2024 +0100
+
+    main,callbacks: rename temp_buffer to aux_backbuffer
+
+commit 53db4941588a9dfa8764d16270d8e8f2b62172ca
+Author: pascal-niklaus <pascal.niklaus@ieu.uzh.ch>
+Date:   Thu Feb 22 20:51:04 2024 +0100
+
+    config, callbacks: add RECT and LINE tools
+
+commit 1ac43435b222f13c2c7d6221abb5ac97996f1aed
+Author: Christian Beier <info@christianbeier.net>
+Date:   Mon Feb 26 10:44:20 2024 +0100
+
+    po: add original translator to Persian language team
+
+commit c99df3452f8818487c9bcf8d18313b92afdb7007
+Author: Christian Beier <info@christianbeier.net>
+Date:   Mon Feb 26 10:41:29 2024 +0100
+
+    po: update all translations w/ report-bug/feature-request string
+    
+    Closes #138
+
+commit f076166b2c47276749f99de4ec15f65e910e745e
+Author: Christian Beier <info@christianbeier.net>
+Date:   Mon Feb 26 10:31:08 2024 +0100
+
+    main,callbacks: add a report-bug/request-feature menu item
+    
+    Re #138
+
+commit 6d4c7f37ab656b758b031e01f81b722fc3241862
+Author: Christian Beier <info@christianbeier.net>
+Date:   Mon Feb 26 09:46:17 2024 +0100
+
+    flatpak: update GNOME runtime to v44
+
+commit 39994f2e0b1fc78c50ffcd17b81e04d905a833fb
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sun Feb 25 20:27:07 2024 +0100
+
+    .github: add an apt update step to CI
+
+commit 2446a4f7b7ddefc83c4c68ec0eb0d5a8b5b087c3
+Author: pascal-niklaus <pascal.niklaus@ieu.uzh.ch>
+Date:   Sun Feb 25 20:22:23 2024 +0100
+
+    callbacks: change '!' in comparison to '!='
+    
+    Closes #188
+
+commit c5d17947d22c4f903bfa3365549d96bc2c0c7430
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sun Dec 17 13:09:17 2023 +0100
+
+    README: update link to input device manager
+
+commit c88af5ed8baa29107d90b614781025a65b0f5b35
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sat Dec 16 09:09:35 2023 +0100
+
+    .gitignore: add .cache
+
+commit 6084ce88681ba826b36761dc8574dfaab709a065
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sun Nov 5 09:08:27 2023 +0100
+
+    README: update release checklist
+
+commit 8da79062a7e1ce7eae06da2daa631e4b5e60bdf4
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sun Oct 22 20:51:02 2023 +0200
+
+    ChangeLog: update
+
+commit 59605e513beb58445019ddb0cdcaf3f8c7ab60e8
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sun Oct 22 20:49:53 2023 +0200
+
+    AppStream: add 1.5.1 release notes
+
+commit d6a33160db888edac0c29dceb9278da9f8596b9c
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sun Oct 22 20:48:45 2023 +0200
+
+    CMake: patchlevel up
+
+commit a8c1ca3aa27fa0f2baea0e96138a7f7c7ca37575
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sun Oct 22 20:48:26 2023 +0200
+
+    NEWS: update
+
+commit 1242a929a01ba4f2a7ed41eda12d3c15fd18643d
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sun Oct 22 20:18:48 2023 +0200
+
+    config: fix .ini file read-only check
+    
+    Needs to be tested for existence as well.
+    
+    Follow-up to ef56fd1f2589720efeb39c6ff5b0f1a0b09d6ad9.
+    
+    re #182
+    
+    Closes #114
+
+commit 3b6731d03d33382c9ac2ebd66abe0b0c3db7fdfd
+Author: Christian Beier <info@christianbeier.net>
+Date:   Wed Oct 11 22:32:36 2023 +0200
+
+    flatpak: switch back to --socket=x11
+    
+    To make flatpak-builder-lint happy.
+
+commit b7c548396955654cb4a40e1703298418c7313aeb
+Author: Christian Beier <info@christianbeier.net>
+Date:   Wed Oct 11 22:09:00 2023 +0200
+
+    ChangeLog: update
+    
+    re #181
+
+commit c19df113b2b400a6753fcad8bf680a16a2b1018d
+Author: Christian Beier <info@christianbeier.net>
+Date:   Wed Oct 11 22:04:18 2023 +0200
+
+    CMake: set full triplet version
+    
+    re #181
+
+commit 07aabaf44443b07f107eb4802f82268ecc20a494
+Author: Christian Beier <info@christianbeier.net>
+Date:   Wed Oct 11 22:02:55 2023 +0200
+
+    AppStream: add 1.5.0 release notes
+    
+    re #181
+
+commit c3a4295fbb9fcf8d081ef7fcbd3b928ab645e89c
+Author: Christian Beier <info@christianbeier.net>
+Date:   Wed Oct 11 21:53:17 2023 +0200
+
+    NEWS: update
+    
+    re #181
+
+commit 88ad45f14dffe41fff037664c115f92b3696ac11
+Author: Christian Beier <info@christianbeier.net>
+Date:   Wed Oct 11 21:37:54 2023 +0200
+
+    NEWS: fix headline indent
+
+commit 9f2c27ad803e4805261278327a92a9a2d0b7143e
+Author: Christian Beier <info@christianbeier.net>
+Date:   Wed Oct 11 21:32:17 2023 +0200
+
+    main,callbacks: handle SIGINT, SIGTERM
+    
+    Closes #114
+
+commit ef56fd1f2589720efeb39c6ff5b0f1a0b09d6ad9
+Author: Christian Beier <info@christianbeier.net>
+Date:   Wed Oct 11 19:47:30 2023 +0200
+
+    config: don't overwrite read-only .ini file
+    
+    Closes #182
+
+commit 806baf6aa5d33ea1bbfbcda5d0ffa05acab5b669
+Author: Christian Beier <info@christianbeier.net>
+Date:   Fri Sep 29 12:05:30 2023 +0200
+
+    README: update release instructions
+
+commit 2c11b9f869c20b29f6a7bc9a3851fdf17bde1849
+Author: Christian Beier <info@christianbeier.net>
+Date:   Fri Sep 29 12:05:00 2023 +0200
+
+    AUTHORS: update
+
+commit ec99424bc6c68fd020665a11b94a22652eea5351
+Author: Christian Beier <info@christianbeier.net>
+Date:   Fri Sep 29 12:03:15 2023 +0200
+
+    callbacks: update authors in About dialog
+
+commit 00eed7608e37dfba00f177b9216ee49f0fa36919
+Author: Christian Beier <info@christianbeier.net>
+Date:   Fri Sep 29 11:54:57 2023 +0200
+
+    callbacks: update copyright year in About dialog
+
+commit d30f9b83e681e72ce1ee54de3ac81088fb0bdf9b
+Author: Ashwin Rajesh <46510831+VanillaViking@users.noreply.github.com>
+Date:   Mon Sep 11 19:07:46 2023 +1000
+
+    Add functionality to draw lines via command
+    
+    * action: add a --line command line option for drawing lines
+    
+    * targets: add GA_LINE and GA_LINEDATA targets to allow cli to send
+    parameters to the main app
+    
+    * chore: remove debug logs
+    
+    * chore: formatting fixes
+    
+    * callbacks: free line_ctx, might prevent potential memory leak
+    
+    * README: add docs for --line command
+    
+    * callbacks: fix memory leak
+    
+    * main: indentation fixes
+    
+    * cmdline: failsafe checks
+    
+    * cmdline: fix minor failsafe check bug
+    
+    * README: add line example
+    
+    * README: indentation error
+    
+    * README: add quotes around color argument
+
+commit e47c6c8a81b3045c43906052c62c9e586d0f90df
+Author: Christian Beier <info@christianbeier.net>
+Date:   Thu Sep 7 15:08:50 2023 +0200
+
+    README: add make install to build instructions
+
+commit cff41ddc8724fef93652136a3fcede0295422916
+Author: Christian Beier <info@christianbeier.net>
+Date:   Wed May 17 08:50:13 2023 +0200
+
+    flatpak: update GNOME runtime to v43
+
+commit e3c3c85a18bba4aefe8f3329f26289d49e91b30e
+Author: Christian Beier <info@christianbeier.net>
+Date:   Wed Apr 26 20:30:30 2023 +0200
+
+    AppStream: remove <em> tags
+    
+    Although
+    https://freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description
+    says this works, the flathub website does not display them correctly,
+    at least currently.
+    
+    Closes https://github.com/flathub/net.christianbeier.Gromit-MPX/issues/3
+
+commit db0c147a36d7c70c4f964d4fa26daa2b2fad77d4
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sun Sep 25 14:42:56 2022 +0200
+
+    AppStream: add 1.4.3 release notes
+
+commit e2c747cf0955b83feaed3a7592e3a0573426bbec
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sun Sep 25 14:40:19 2022 +0200
+
+    callbacks: update authors
+
+commit 036557fb02d8b986ebf14cb6232bc6656908cb8c
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sun Sep 25 14:37:33 2022 +0200
+
+    NEWS: add v1.4.3 entry
+
+commit 2f9c6d2b9ff25f4038330d04faf4919a269bde94
+Author: godmar <godmar@gmail.com>
+Date:   Fri Aug 19 15:01:42 2022 -0400
+
+    input: look for 'GNOME' as substring of XDG_CURRENT_DESKTOP
+    
+    ...instead of checking whether XDG_CURRENT_DESKTOP equals `GNOME` when installing hotkeys into the compositor under Wayland. This will support both `GNOME` and `ubuntu:GNOME` for instance, the latter is the setting on Ubuntu 22.
+    
+    Closes #164
+
+commit a8e5ce4668fe7bb3d025360611b1719be1039817
+Author: Christian Beier <info@christianbeier.net>
+Date:   Tue Aug 16 21:21:38 2022 +0200
+
+    input: don't mess with compositor when no keys are set at all
+    
+    re #162
+
+commit 794b7306ba3e4aeef1040885a4202b5e0fa04bbd
+Author: Christian Beier <info@christianbeier.net>
+Date:   Tue Aug 16 21:10:19 2022 +0200
+
+    input: adapt debug logs to no-hotkeys-set case
+    
+    re #162
+
+commit f94531cdc72623c8370c4d296759e0858c1336ce
+Author: Christian Beier <info@christianbeier.net>
+Date:   Tue Aug 16 21:07:45 2022 +0200
+
+    input: fill device table also when no hotkeys are defined
+    
+    Closes #162
+
+commit aeac571d7ad48f5364b67423cdfa1501e1d8ec74
+Author: Christian Beier <info@christianbeier.net>
+Date:   Fri Jul 8 14:33:08 2022 +0200
+
+    README: link future milestones as roadmap
+
+commit 90acdda9717a3c34f5e0db4ec61129e8d1cc5317
+Author: Christian Beier <info@christianbeier.net>
+Date:   Mon Jul 4 12:38:56 2022 +0200
+
+    TravisCI: delete .travis.yml
+
+commit 9b4327d109698d74f99feabe0dd50acfa7f9d10c
+Author: Christian Beier <info@christianbeier.net>
+Date:   Mon Jul 4 12:38:23 2022 +0200
+
+    README: use GitHub CI status badge instead of TravisCI one
+
+commit 77e747950af7bce4fd3c1adcaff03b99535b19b6
+Author: Christian Beier <info@christianbeier.net>
+Date:   Mon Jul 4 12:36:09 2022 +0200
+
+    Add GitHub CI workflow
+
+commit 43628bce90fd41897c6e6ad8d79997b5f3fc4c83
+Author: avma <avi.markovitz@gmail.com>
+Date:   Sat Jul 2 18:26:58 2022 +0300
+
+    po: add Hebrew translation
+    
+    * Add Hebrew translation
+    
+    Add he.po file
+    
+    * po:add Hebrew translation
+    
+    Add 'he' language code to CMakeLists.txt
+    
+    * po: add hebrew translation
+    
+    add he.po
+    
+    * po:add Hebrew Translation (fix)
+    
+    Fix empty lines (Missing / surplus) in file CMakeLists.txt.
+
+commit 3773ead60c9cbccc46db24f3281ab263931d9317
+Author: bbhtt <62639087+bbhtt@users.noreply.github.com>
+Date:   Sun Jun 12 14:03:13 2022 +0530
+
+    flatpak: bump runtime to 42
+    
+    - Switch to fallback-x11. This is a GTK3 application.
+    - Update gnome-settings-daemon to 42.2
+    - Update dconf to 0.40.0
+    
+    Closes #141
+
+commit 87f96df64f0bdfeeba3903b2ef3075ba8d4bb372
+Author: Christian Beier <info@christianbeier.net>
+Date:   Mon Jun 13 20:51:52 2022 +0200
+
+    flatpak: update shared-modules
+    
+    re #141
+
+commit 30a566424f5025fe26f655c8ccbffb96266c09dc
+Author: Adam Chyła <adam@chyla.org>
+Date:   Mon Apr 25 09:44:51 2022 +0200
+
+    main: fix use after free
+
+commit 2ae017a54efa01acb0af9d4672c973dc0c08254c
+Author: komeil Parseh <ahmdparsh129@gmail.com>
+Date:   Wed Mar 16 11:10:12 2022 +0330
+
+    po:add Farsi (Persian) translation
+
+commit 5e1d965a86ed2fecdd4867bca7232e4f590a776f
+Author: Christian Beier <info@christianbeier.net>
+Date:   Wed Mar 9 10:10:22 2022 +0100
+
+    Update bug issue template
+
+commit 5e9bf6afdccf206f259d57ed9e173dce75c82a68
+Author: Christian Beier <info@christianbeier.net>
+Date:   Mon Feb 28 10:44:24 2022 +0100
+
+    README: document that RGBA colours can be set for tools as well
+    
+    re #87
+
+commit 367d78426077aa8c3c429ac95e70e2a857eec8e3
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sat Feb 12 16:24:10 2022 +0100
+
+    AppStream: add 1.4.2 release notes
+
+commit 558b2f2c57fb8f55e2ccb3b8ae2fcbb9a34bfac8
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sat Feb 12 16:20:32 2022 +0100
+
+    NEWS: update
+
+commit 721d8cd70d5ffb70553a893ac497d1dc31ccfce8
+Author: Christian Beier <info@christianbeier.net>
+Date:   Tue Feb 8 21:36:08 2022 +0100
+
+    callbacks: let on_toggle_paint_all wait a bit under X11
+    
+    Closes #149
+
+commit 2536b9a90acec280ded5e574d8fe32c22d93d6e2
+Author: Christian Beier <info@christianbeier.net>
+Date:   Mon Feb 7 13:36:58 2022 +0100
+
+    main: add separator above Quit menu item
+
+commit 88e448d306fd8ec2835d3afbb9502c776582445f
+Author: Christian Beier <info@christianbeier.net>
+Date:   Mon Feb 7 13:30:35 2022 +0100
+
+    CMake: minor up
+
+commit 03619070a234faed96441ee1183af3f752d137a0
+Author: Christian Beier <info@christianbeier.net>
+Date:   Fri Feb 4 14:40:16 2022 +0100
+
+    input: correctly document add_hotkeys_for_compositor
+
+commit 23596f02a556da89a74c548412f95748aa259657
+Author: Christian Beier <info@christianbeier.net>
+Date:   Fri Feb 4 14:39:54 2022 +0100
+
+    Revert "input: document add_hotkeys_for_compositor"
+    
+    This reverts commit 4f3ed369e1aeb2c2e5275fe04897e82d0690e0fd.
+
+commit 9efe01d9ee2b47c03c682ee34bc01753424cb46c
+Author: Christian Beier <info@christianbeier.net>
+Date:   Fri Feb 4 14:24:43 2022 +0100
+
+    README: format problems section, link to open bugs
+
+commit 4f3ed369e1aeb2c2e5275fe04897e82d0690e0fd
+Author: Christian Beier <info@christianbeier.net>
+Date:   Fri Feb 4 14:11:57 2022 +0100
+
+    input: document add_hotkeys_for_compositor
+    
+    re #121 #127
+
+commit b7bb607e5789fa5a10416d5e9937428c48f68647
+Author: Christian Beier <info@christianbeier.net>
+Date:   Fri Feb 4 13:20:50 2022 +0100
+
+    input: force redraw when changing input shape under Wayland
+    
+    Closes #136
+
+commit 570b8832e282b6694eddc1dde80ddbaae0d56d61
+Author: Christian Beier <info@christianbeier.net>
+Date:   Fri Feb 4 12:53:32 2022 +0100
+
+    input: hide unpainted window in ungrab-all case, too
+
+commit 9228e716922fbcde25ed9e32b0bca9217e6bf0cd
+Author: Christian Beier <info@christianbeier.net>
+Date:   Fri Feb 4 12:06:44 2022 +0100
+
+    callbacks: add a faint pink background in DEBUG mode
+    
+    re #106 #121 #127 #136
+
+commit de31837c0af97c3dd9f1f891ccd2dfa4265e0094
+Author: Christian Beier <info@christianbeier.net>
+Date:   Fri Feb 4 11:04:23 2022 +0100
+
+    main: check for org.kde.StatusNotifierWatcher dbus name
+    
+    ...instead of XDG_CURRENT_DESKTOP=KDE
+    
+    Closes #149
+
+commit 837f93aae8d987907965fdd4e14d5f23376360eb
+Author: Christian Beier <info@christianbeier.net>
+Date:   Thu Feb 3 21:14:33 2022 +0100
+
+    AppStream: add 1.4.1 release notes
+
+commit 2c2165ab8c987e692b4b8c5c6c51bdd30058b963
+Author: Christian Beier <info@christianbeier.net>
+Date:   Thu Feb 3 21:06:54 2022 +0100
+
+    callbacks: update Copyright year
+
+commit 92b52b51d1516fc984d01815c5e13a1e5f92fc9e
+Author: Christian Beier <info@christianbeier.net>
+Date:   Thu Feb 3 20:56:23 2022 +0100
+
+    NEWS: update
+
+commit 95496afbf98236868a07acb858a00f283daca9c6
+Author: Christian Beier <info@christianbeier.net>
+Date:   Thu Feb 3 21:19:26 2022 +0100
+
+    README: add release checklist
+
+commit b255c3d206ca3241e8bcd1067e6eaca492a33bcb
+Author: Christian Beier <info@christianbeier.net>
+Date:   Thu Feb 3 19:40:21 2022 +0100
+
+    NEWS: add release dates
+
+commit 804819fe08346e7a4721efe88bb977df8a06368b
+Author: Christian Beier <info@christianbeier.net>
+Date:   Wed Feb 2 21:29:37 2022 +0100
+
+    Update bug issue template
+
+commit c2ef92691f434b307e979bd24ad33b1eadbdd166
+Author: Christian Beier <info@christianbeier.net>
+Date:   Fri Jan 14 11:45:31 2022 +0100
+
+    README: document device-specific cmdline toggling
+    
+    Closes #145
+
+commit 6820b206fc3fdefc51cb39d9c87e4236b6be4de8
+Author: Christian Beier <info@christianbeier.net>
+Date:   Tue Sep 21 14:16:28 2021 +0200
+
+    README: mention XFCE 4.14 pecularities
+    
+    Closes #142
+
+commit 2592af4866098ffe56022cf8994e9a1146ec7c78
+Author: Christian Beier <info@christianbeier.net>
+Date:   Thu Jul 1 12:43:21 2021 +0200
+
+    main: set 'modified' after undo/redo, add explicit draw in reshape()
+    
+    Closes #122
+
+commit 65bb19958fc763457437fbcce7c3958ef36b03fd
+Author: Christian Beier <info@christianbeier.net>
+Date:   Wed Jun 30 17:36:29 2021 +0200
+
+    README: document valid opacity values
+    
+    re #139
+
+commit a100b4a42fbf65e140c5d9fbdb11d977b0293c02
+Author: Christian Beier <info@christianbeier.net>
+Date:   Wed Jun 30 12:16:19 2021 +0200
+
+    README: explain in more detail how opacity is set
+    
+    Closes #139
+
+commit 32661b66ed62477b21a06bd90e5cfd4eef898d16
+Author: Christian Beier <info@christianbeier.net>
+Date:   Tue Jun 22 21:59:00 2021 +0200
+
+    flatpak: build dconf and hint gsettings at its install location
+    
+    * dconf-override.patch and dconf build config: from https://github.com/flathub/ca.desrt.dconf-editor
+    * GIO_EXTRA_MODULES hint from: https://src.fedoraproject.org/flatpaks/dconf-editor/c/9a91b41133369cfbc5424bc7e3cb1e2df86d7dae?branch=stable
+    
+    Closes #135
+
+commit 6e02425275896e2a0a7c95808f79567740b3070a
+Author: Christian Beier <info@christianbeier.net>
+Date:   Wed May 26 09:46:17 2021 +0200
+
+    README: mention that XWayland is required for the time being
+    
+    Closes #132
+
+commit 2c7589da3f0e8108335295fca65859fe8c63a0e1
+Author: Christian Beier <info@christianbeier.net>
+Date:   Fri May 14 13:10:08 2021 +0200
+
+    README: document maxsize config parameter
+    
+    re #129, #115
+
+commit dc5900395f9b0ef61b6b6c145bcdda01e51c0a13
+Author: Christian Beier <info@christianbeier.net>
+Date:   Mon May 10 09:54:17 2021 +0200
+
+    README: mention Flatpak config location
+
+commit d2fa774f26e022737259731945838022bcef6219
+Author: Christian Beier <info@christianbeier.net>
+Date:   Mon May 10 09:39:01 2021 +0200
+
+    README: document Flatpak autostart
+
+commit 444b1fdbaed9287a1ef347f59bde69f16d1d4cd1
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sun Apr 11 07:11:08 2021 +0200
+
+    README: remove stray square brackets
+
+commit 9f02e7d588192f9f8f288beb4671760aefc714eb
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sun Apr 11 07:08:25 2021 +0200
+
+    README: link one screenshot
+
+commit 1920bc1e4c7742b4b368544d25e99a0117916578
+Author: Renato Candido <renatocan@gmail.com>
+Date:   Sat Mar 13 09:22:32 2021 -0300
+
+    po: fix Italian translation
+    
+    I tried to compile the project and got an error in this line.
+    Fixed it by removing one of the quotation marks.
+
+commit 922b934679aea6bcf0367287466a4134fc6742b1
+Author: Christian Beier <info@christianbeier.net>
+Date:   Tue Mar 9 21:40:54 2021 +0100
+
+    CMake: use Italian translation
+
+commit 05004fc8a87dca18391b8d1bd88ac6a5e7302a30
+Author: albanobattistella <34811668+albanobattistella@users.noreply.github.com>
+Date:   Mon Mar 8 22:00:21 2021 +0100
+
+    po: add Italian translation
+
+commit becd840e46a6955dbc44b9bec6f1bc3356e35e6e
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sun Mar 7 22:12:09 2021 +0100
+
+    callbacks: update icon name for About dialog
+
+commit 65aa3c9589969513f2e3066bfc3eca3e4c409210
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sun Mar 7 22:02:10 2021 +0100
+
+    Prefix all icons
+    
+    Fixes tray icon display when running in flatpak on Ubuntu.
+
+commit fe5aa8bd0548b2aab97021c06ebccd6b53f10dba
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sun Mar 7 21:54:46 2021 +0100
+
+    Remove XPM icon
+
+commit c5714a6de7bf6b54e64f2badf23f3f07929dafa7
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sun Mar 7 20:24:57 2021 +0100
+
+    flatpak: fix appindicator not showing up in Ubuntu
+    
+    Fixes https://github.com/bk138/gromit-mpx/issues/123#issuecomment-792043568
+    
+    https://github.com/ubuntu/gnome-shell-extension-appindicator/issues/74
+    has some background.
+
+commit 631ee675c3abd10c398e8c9f2d7cd026a497363c
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sun Mar 7 19:24:51 2021 +0100
+
+    flatpak: update README
+
+commit 2a838303154df4a90495c4f93741846cbd63d37f
+Author: Christian Beier <info@christianbeier.net>
+Date:   Tue Feb 16 22:29:46 2021 +0100
+
+    CMake,main: prefer ayatana-appindicator, fallback to appindicator
+    
+    Closes #111
+
+commit b8ed91cfca25e14338d980e12cd73fd37eefbc85
+Author: Christian Beier <info@christianbeier.net>
+Date:   Fri Feb 5 13:53:09 2021 +0100
+
+    Rename gromit-mpx.[c|h] to main.[c|h]
+
+commit da6b7d42d176d4e25f442ff6f6cbd105893ee94c
+Author: Christian Beier <info@christianbeier.net>
+Date:   Fri Feb 5 13:46:47 2021 +0100
+
+    Factor out pixel drawing functions into drawing.[c|h]
+
+commit 9e5280553be6714f27cf5e72311718176c249b4d
+Author: Christian Beier <info@christianbeier.net>
+Date:   Fri Feb 5 11:40:09 2021 +0100
+
+    po: update German translation
+
+commit 9c8804d5831e18c343293530620cfded8aa3b470
+Author: Christian Beier <info@christianbeier.net>
+Date:   Fri Feb 5 11:39:39 2021 +0100
+
+    po: update Spanish translation
+
+commit a3777d1e0c378ec2a55c3ed04c471c20d361e6d3
+Author: Christian Beier <info@christianbeier.net>
+Date:   Fri Feb 5 11:33:19 2021 +0100
+
+    config: let .cfg parse return and alert instead of exit()ing on fail
+    
+    Closes #118
+
+commit 176469f5d1d1365f2772370ef2cfb03be59b1fb2
+Author: Christian Beier <info@christianbeier.net>
+Date:   Thu Feb 4 19:32:42 2021 +0100
+
+    CMake: use spanish translation
+    
+    Closes #116
+
+commit 0036f47fce1769a793b64728c0f20889a84a5179
+Author: Christian Beier <info@christianbeier.net>
+Date:   Thu Feb 4 19:32:18 2021 +0100
+
+    po: add Spanish translation
+
+commit 696865ef5aba2a266d3eb5c484ece7b42aa337ba
+Author: Christian Beier <info@christianbeier.net>
+Date:   Mon Feb 1 23:01:47 2021 +0100
+
+    CMake: use German translation
+    
+    re #116
+
+commit fc41027356120a54e573fe01c9dba8105a5fb21a
+Author: Christian Beier <info@christianbeier.net>
+Date:   Mon Feb 1 23:01:23 2021 +0100
+
+    po: add German translation
+    
+    re #116
+
+commit f09aa2ee1693658ff355449dc618a57745fb99ac
+Author: Christian Beier <info@christianbeier.net>
+Date:   Mon Feb 1 22:06:34 2021 +0100
+
+    po: add README and xgettext helper script
+    
+    re #116
+
+commit d818ce50afb186ffef8e1e345e6f6ee8ad2fe783
+Author: Christian Beier <info@christianbeier.net>
+Date:   Mon Feb 1 21:54:52 2021 +0100
+
+    Mark all UI-related strings for translation
+    
+    re #116
+
+commit 0760a6a75c695257c72fc800825697593b8005f8
+Author: Christian Beier <info@christianbeier.net>
+Date:   Mon Feb 1 21:36:07 2021 +0100
+
+    Bind and use gettext textdomain
+    
+    re #116
+
+commit dd37b0b95a52b6e1618b4e55b7fcf9d188c879da
+Author: Christian Beier <info@christianbeier.net>
+Date:   Mon Feb 1 21:29:39 2021 +0100
+
+    CMake: prepare gettext usage
+    
+    re #116
+
+commit d231016317e64c5033d1984728c7480b993668f1
+Author: Christian Beier <info@christianbeier.net>
+Date:   Mon Feb 1 21:04:54 2021 +0100
+
+    CMake: remove unused #define from build-config.h
+
+commit f2e7cd51bebf0c4a6a10a419e4a393c89240c8e6
+Author: Christian Beier <info@christianbeier.net>
+Date:   Mon Feb 1 21:04:26 2021 +0100
+
+    config: use PACKAGE_VERSION from build-config.h
+
+commit 5f10acc07845bd77ff0cc5c866bc7f6e5df8b725
+Author: Christian Beier <info@christianbeier.net>
+Date:   Mon Feb 1 21:03:50 2021 +0100
+
+    callbacks: use PACKAGE_VERSION and PACKAGE_URL from build-config.h
+
+commit a46bc0348fefc12590d8667a964386368d54c694
+Author: Christian Beier <info@christianbeier.net>
+Date:   Mon Feb 1 20:59:30 2021 +0100
+
+    CMake: remove unused #define's from build-config.h template
+
+commit c55b0f7a5b707db0cb6acae72adbd8334965fe9d
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sun Jan 31 20:00:33 2021 +0100
+
+    flatpak: add a README
+
+commit b0d1f37873fef8705a7e8494fef5b38bbbea6fb6
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sun Jan 31 16:59:38 2021 +0100
+
+    Fix tool display by using correct type formats
+
+commit 726203c32d46585a8ba17f7aad6a3cfb69e36454
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sun Jan 31 16:57:39 2021 +0100
+
+    Fix tool display upon startup
+    
+    After 2ce8725553631c0cd7d4f0d52e64ca94a84cdab9, this was always false.
+    Simply set it to always display.
+
+commit 7adf741a1db131140c1155077d13c507560d16aa
+Author: marput <frayedultrasonicaligator@disroot.org>
+Date:   Sun Jan 31 16:45:17 2021 +0100
+
+    Add a maxsize config parameter
+    
+    Closes #115 #92
+
+commit 6a3025e12fa739327a9a9e904f90b0c4b0ab1f1d
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sat Jan 9 13:16:32 2021 +0100
+
+    CONTRIBUTING: first version
+
+commit a0328c896e29effc4715a13203fb63f0b1f88bf2
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sun Jan 3 19:08:05 2021 +0100
+
+    Move cmdline parsing into config.[c|h]
+    
+    re #113 #79
+
+commit 2ce8725553631c0cd7d4f0d52e64ca94a84cdab9
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sun Jan 3 19:02:24 2021 +0100
+
+    Parse cmdline args after config and key file
+    
+    Really closes #113 #79
+
+commit 1c3bcad363aeb7b69277c9699e265bbcd3bd470d
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sun Jan 3 18:55:11 2021 +0100
+
+    Move default hotkey init from app_parse_args() to setup_main_app()
+    
+    re #113 #79
+
+commit 8830362435acb7ed394d0acb78433fe360d97bef
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sun Jan 3 18:50:01 2021 +0100
+
+    config: make parse_config not check for default hotkeys
+    
+    re #113 #79
+
+commit 68053a4d120eb01cba4b1bb1949bab7fd8f871b1
+Author: Christian Beier <info@christianbeier.net>
+Date:   Thu Dec 10 22:04:30 2020 +0100
+
+    README: add Flathub badge
+
+commit 9476f51aca5397a3684676e19b898da047b117ec
+Author: Christian Beier <info@christianbeier.net>
+Date:   Fri Dec 4 10:23:16 2020 +0100
+
+    flatpak: update GNOME runtime dep to 3.38
+
+commit bbbf33682507f52c6c87e369cb11dc5ecf964e41
+Author: Christian Beier <info@christianbeier.net>
+Date:   Thu Dec 3 19:47:14 2020 +0100
+
+    AppStream: add OARS content rating
+
+commit f5a4a20c04b793704472da60b757ca646bab4b10
+Author: Christian Beier <info@christianbeier.net>
+Date:   Thu Dec 3 15:48:53 2020 +0100
+
+    ChangeLog: update
+
+commit 39be16bec4cd9204862d42a8a0ccb8c19d7737ae
+Author: Christian Beier <info@christianbeier.net>
+Date:   Thu Dec 3 15:47:04 2020 +0100
+
+    AppStream: update release date
+
+commit 86d674a1c26769cd228962885117a49c209cecc5
+Author: Christian Beier <info@christianbeier.net>
+Date:   Thu Dec 3 15:46:29 2020 +0100
+
+    AppStream: update screenshots
+
+commit 711e4a32b91f1c5df375c9dce6516e07cfbd6b74
+Author: Christian Beier <info@christianbeier.net>
+Date:   Thu Dec 3 15:41:46 2020 +0100
+
+    Resize screenshots to 1600x900
+
+commit d075609b118197e241f29dd33448aaa4cb31332d
+Author: Christian Beier <info@christianbeier.net>
+Date:   Thu Dec 3 15:33:12 2020 +0100
+
+    Add screenshots
+
+commit 1f8460f4ca77a17dea1b9e6b07d0bb6fc872df89
+Author: Christian Beier <info@christianbeier.net>
+Date:   Thu Dec 3 14:35:03 2020 +0100
+
+    AppStream: fix main description linter issues
+
+commit 8df2159684380ae772422e7542165e0d86d3af33
+Author: Christian Beier <info@christianbeier.net>
+Date:   Thu Dec 3 14:21:22 2020 +0100
+
+    AppStream: shorten 1.3.1 release description
+
+commit 89f1f5bafea9799c5edf55f9ea3da16b07b218f0
+Author: Christian Beier <info@christianbeier.net>
+Date:   Thu Dec 3 14:19:22 2020 +0100
+
+    AppStream: add 1.4 release
+
+commit 8ca7a8d3acdc01e9f0d4b1d81b6bd2576c18e023
+Author: Christian Beier <info@christianbeier.net>
+Date:   Thu Dec 3 14:00:24 2020 +0100
+
+    AppStream: make linter a bit happier
+
+commit 561b3151cbdac19be9768d2f032894668be32052
+Author: Christian Beier <info@christianbeier.net>
+Date:   Thu Dec 3 12:06:06 2020 +0100
+
+    AppStream: update description texts
+
+commit b5a592f6fa03f6e88cbf0cf38b250e228ffd2d5e
+Author: Christian Beier <info@christianbeier.net>
+Date:   Thu Dec 3 11:36:49 2020 +0100
+
+    NEWS: update
+
+commit 3c3334fa7b3169d9ebebeb28eddf35f551f69b42
+Author: Christian Beier <info@christianbeier.net>
+Date:   Thu Dec 3 11:20:19 2020 +0100
+
+    README: update XFCE potential problem section
+
+commit 22d4fa8d1647c2a8ed516fa23de7902ec51c7b3a
+Author: Christian Beier <info@christianbeier.net>
+Date:   Thu Dec 3 11:19:02 2020 +0100
+
+    manpage: mention XFCE pecularities
+
+commit 136b8b41c9ee158f608b6d8b0b031391b096dc0e
+Author: Christian Beier <info@christianbeier.net>
+Date:   Thu Dec 3 11:15:04 2020 +0100
+
+    manpage: update email
+
+commit 2846a4e778dcea23f457814a4215009a94d1d4a6
+Author: Christian Beier <info@christianbeier.net>
+Date:   Thu Dec 3 11:13:19 2020 +0100
+
+    manpage: update Environment section
+
+commit 1577fa7e9f6a629ce625049a0742097f8bd017d7
+Author: Christian Beier <info@christianbeier.net>
+Date:   Thu Dec 3 10:54:24 2020 +0100
+
+    callbacks: update About section
+
+commit c464e47ce99fe9e911d357be39771c50452b527b
+Author: Christian Beier <info@christianbeier.net>
+Date:   Thu Dec 3 10:47:46 2020 +0100
+
+    Update AUTHORS
+
+commit b5204642b546f3785dd8290a90651dd32697a671
+Author: Christian Beier <info@christianbeier.net>
+Date:   Thu Dec 3 10:45:06 2020 +0100
+
+    Revert "Add menu item to display man page"
+    
+    This reverts commit d7133eeecc9de21247144fa5b46108a853633803.
+
+commit 767f9a82b5fd9d1aa357c910b0f3a2fc4e6e692c
+Author: Christian Beier <info@christianbeier.net>
+Date:   Thu Dec 3 10:30:33 2020 +0100
+
+    Fix tool selection for drawing tablet pens
+    
+    ...by changing the tool selection strategy from 'lower button wins
+    over higher button' to 'higher button wins over lower button'.
+    
+    Closes #16
+    
+    re #50
+
+commit 55ebf3d790e417b8b2add2818c80ff106d093bad
+Author: Christian Beier <info@christianbeier.net>
+Date:   Fri Nov 20 09:51:59 2020 +0100
+
+    Provide a better out-of-the-box experience for XFCE users
+    
+    ...by using different default hot keys.
+    
+    re #77
+
+commit b4c18892fdddc3cedc542105246211b1db9ca475
+Author: Christian Beier <info@christianbeier.net>
+Date:   Wed Nov 18 22:03:22 2020 +0100
+
+    TODO: remove
+    
+    We're using issue tracking and release grouping to plan ahead nowadays.
+
+commit f7a76980249ebd3fab98eabc48d5be0c6893f40b
+Author: Christian Beier <info@christianbeier.net>
+Date:   Wed Nov 18 21:59:34 2020 +0100
+
+    Document that only single keysyms can be defined as hotkeys
+    
+    Closes #107
+
+commit d2ec1acf6789ae4cad386cd0a34703d3182189fa
+Author: Christian Beier <info@christianbeier.net>
+Date:   Tue Nov 17 22:44:25 2020 +0100
+
+    callbacks: disable event compression when a tablet pen starts drawing
+    
+    ...to enable smoother lines. When another type of device starts
+    drawing again, we re-enable the default of dropping events, as
+    otherwise (at least for a Thinkpad touchpad), drawn lines were only
+    fully drawn to the end on button release.
+    
+    Closes #90
+
+commit 0bda6418ca0c54ac97f7256089f14e68c11659fd
+Author: Christian Beier <info@christianbeier.net>
+Date:   Tue Nov 17 19:32:28 2020 +0100
+
+    config: don't use harcoded /etc/ locations
+    
+    Simply rely on what's defined by the build system instead.
+
+commit 5ea63fa60779065a3ce48eacead10b7d0dd5fad3
+Author: Christian Beier <info@christianbeier.net>
+Date:   Tue Nov 17 11:23:44 2020 +0100
+
+    README: document XFCE hotkey conflict
+    
+    re #77
+
+commit 4b771355b471fcb009c334eb520c54a4ee711c4d
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sun Nov 15 19:39:26 2020 +0100
+
+    callbacks: log modifier state in buttonpress debug as well
+
+commit 3199dafb8d84177c093d5c5ad8c38ce88c466664
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sun Nov 15 13:49:27 2020 +0100
+
+    README: list Mutter and KWin instead of Compiz and xcompmgr
+    
+    We're not in the 2000's anymore.
+
+commit 3ad760681e1fa0acce333e12a400b48d3163e433
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sun Nov 15 13:39:10 2020 +0100
+
+    README: make intro more concise and list key features
+
+commit 64ca6e2c7e23741fdf763dfedbf0fcea94e87ea9
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sun Nov 15 12:49:02 2020 +0100
+
+    .gitignore: update
+
+commit d71d7a974ecff4c0e83aa82e29fe473594e3955c
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sun Nov 15 12:41:55 2020 +0100
+
+    CMake: increment minor version
+
+commit 1d62dc006a13421054a066a9cdb97982f2108451
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sun Nov 15 12:36:54 2020 +0100
+
+    flatpak: allow access to host dconf
+    
+    This allows setting global hotkeys for a GNOME host.
+    
+    re #27
+
+commit 6501486df975205eb202f06b7b1da3883d65e5f9
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sun Nov 15 12:31:59 2020 +0100
+
+    input: set hotkeys in compositor if running under (X)Wayland
+    
+    As Wayland has no other possibility to globally listen for hotkey
+    events than via the compositor, set the hotkeys there. This is not
+    device-specific anymore of course.
+    
+    Currently supports GNOME, more hopefully to follow.
+    
+    re #27
+
+commit b53b98d244d231e350691d42fff623c57fdc6890
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sat Nov 14 13:28:58 2020 +0100
+
+    README: mention similar Unix tools
+
+commit 539aafdd1576c680e3b54e772400cc6ce504940c
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sat Nov 14 13:23:10 2020 +0100
+
+    README: mention EpicPen for Windows
+
+commit c0febcbf86f3ef5a5042070a4a20d09054c67e3a
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sat Nov 14 13:22:13 2020 +0100
+
+    README: remove mention of Compiz-related tools
+    
+    I guess no-one is using Compiz nowadays...
+
+commit b8981c4d16199337f4fff350f2a42b10366eb222
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sat Nov 14 13:20:43 2020 +0100
+
+    README: move similar tools into own secton
+
+commit 56a6fb6e8530ca96def45c51d645900c3deee96d
+Author: Christian Beier <info@christianbeier.net>
+Date:   Tue Nov 10 10:06:37 2020 +0100
+
+    input: fix draw-cursor not appearing over Wayland-only windows
+    
+    re #27
+
+commit c4c0ac62b8c4ff52ce5ad432a06eea5a05d9e2d6
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sun Nov 8 17:25:46 2020 +0100
+
+    input: remove GDK backend check
+    
+    We only support 'x11' for the time being.
+    
+    re #27
+
+commit 81c2bd289df64ed110598187a29ecade70b7ac16
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sun Nov 8 17:18:38 2020 +0100
+
+    Set GDK backend to x11 explicitly
+    
+    While this does not fix all issues when running on Wayland,
+    we at least get no hang when using GtkSelection and also can
+    get some basic drawing after the app was activated via the tray
+    icon. No keyboard shortcuts though.
+    
+    re #27
+
+commit d7133eeecc9de21247144fa5b46108a853633803
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sat Nov 7 13:02:06 2020 +0100
+
+    Add menu item to display man page
+
+commit 7ad3bbf7accad416092989f76cdb81769aa66545
+Author: Christian Beier <info@christianbeier.net>
+Date:   Thu Nov 5 18:53:39 2020 +0100
+
+    Add (preliminary) AppStream metadata
+
+commit 0df21e1879e91d9cd75980c402408d8ea60c02c1
+Author: Christian Beier <info@christianbeier.net>
+Date:   Thu Nov 5 17:52:26 2020 +0100
+
+    Add icon to be used/exported with the .desktop file
+
+commit 03a5a58f7b9864b3c5df9ad351bab66e7e28b948
+Author: Christian Beier <info@christianbeier.net>
+Date:   Thu Nov 5 16:50:04 2020 +0100
+
+    Prefix .desktop file
+
+commit 7ae0682617b560326a22bbb9d6fe8132b1207344
+Author: Christian Beier <info@christianbeier.net>
+Date:   Thu Nov 5 16:48:10 2020 +0100
+
+    Add Flatpak manifest
+
+commit d52c608240140f70d89ccfd73235b956df960d05
+Author: Christian Beier <info@christianbeier.net>
+Date:   Wed Nov 4 22:53:56 2020 +0100
+
+    Add Flatpak shared-modules git submodule
+
+commit 4ea7a7a5eb9b908500d8d81104bf322156188fcc
+Author: Christian Beier <info@christianbeier.net>
+Date:   Wed Nov 4 22:29:13 2020 +0100
+
+    config: look for Flatpak config location, rework fallback logic
+
+commit 8f696110b5a933f5a1ebba07de05a97753b0640a
+Author: Christian Beier <info@christianbeier.net>
+Date:   Thu Oct 22 12:20:03 2020 +0200
+
+    Let system tray icon indicate grab/active status
+    
+    Closes #57
+
+commit 7ca9c353ea9d85d6f2f439ce4dc99951714cb615
+Author: Christian Beier <info@christianbeier.net>
+Date:   Thu Oct 22 11:30:25 2020 +0200
+
+    input: factor grab status get over devices into separate functions
+
+commit fd334fdddedec9ce671885b3d0f1b13f3beab1f2
+Author: Christian Beier <info@christianbeier.net>
+Date:   Thu Oct 22 10:09:33 2020 +0200
+
+    input: let toggle_grab for all get status from each device
+    
+    ...instead of tracking status based on toggle on/off.
+    
+    When using toggle_grab(NULL), all_grabbed would be set to TRUE, when
+    then using toggle_grab(some_device), not all devices would be grabbed
+    anymore, but the global all_grabbed would still say so.
+
+commit b95ee61f49fbf9c8083fd754d84f6c4e91d2fda1
+Author: Christian Beier <info@christianbeier.net>
+Date:   Wed Oct 21 20:44:36 2020 +0200
+
+    Make Gromit-MPX fallback to non-device-specific paint toggle on KDE
+    
+    Closes #72
+
+commit 6da1b2dda8fe5c24357f8ff6f68dc116af259d1e
+Author: Christian Beier <info@christianbeier.net>
+Date:   Wed Oct 21 18:04:54 2020 +0200
+
+    Make Gromit-MPX persist opacity setting
+    
+    Opacity is set from the UI and is thus OK to be persisted in the .ini
+    key file.
+    
+    re #96
+
+commit e7b9594b9ec7015ef019377c8fac7b2aea2b19bf
+Author: Christian Beier <info@christianbeier.net>
+Date:   Wed Oct 21 13:00:42 2020 +0200
+
+    README: add autostart instructions
+    
+    Closes #96
+
+commit 7f906f5049d052d6e559e96e44be91b5f342dd12
+Author: Eshant Gupta <guptaeshant@gmail.com>
+Date:   Wed Oct 21 15:40:02 2020 +0530
+
+    TravisCI: add CI for PPC64LE
+
+commit c22f20205a37574836b6b98da5f7e6033598560c
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sun Oct 18 18:54:54 2020 +0200
+
+    TravisCI: use Bionic instead of Trusty
+
+commit 6ee7c6f09fd0b589be8f3c1bbf7a13db8ff37dc4
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sun Oct 18 18:54:17 2020 +0200
+
+    CMake: declare that we need GTK 3.22
+    
+    ...for gtk_show_uri_on_window ()
+
+commit bb8cb60b991a36114d70c9bbfc82c8cb1ea97222
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sun Oct 18 18:45:04 2020 +0200
+
+    Add support options to tray menu
+
+commit f37ca17b6e34907e841ae3b8cc1bfaf55150a8a7
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sun Oct 18 18:43:06 2020 +0200
+
+    FUNDING.yml: use existing PayPal button link
+
+commit 69b3de5e88d9ec963b6f8f0d000528be7f8ba76d
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sun Oct 18 17:11:13 2020 +0200
+
+    .gitignore: update
+
+commit 5bd3ad707d3c73104e2f96f995fb7dcb375ea50f
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sun Oct 18 17:07:47 2020 +0200
+
+    FUNDING.yml: add PayPal link
+
+commit cce9ba7e3274146d8943b2dc52ee890653c1b678
+Author: Christian Beier <info@christianbeier.net>
+Date:   Tue Oct 13 20:56:26 2020 +0200
+
+    Add -V and --version cmdline args
+
+commit 6a3dd1596516d8ac4526218742386073b54f170c
+Author: Christian Beier <info@christianbeier.net>
+Date:   Tue Oct 13 20:29:50 2020 +0200
+
+    README: mention needed version for hotkeys by cfg
+    
+    Closes #99
+
+commit 3d0e31c2b9011459c0ce1b144d81440dbacd2b5a
+Author: Christian Beier <info@christianbeier.net>
+Date:   Mon Sep 28 20:19:59 2020 +0200
+
+    README: update email contact address
+
+commit 3ac0a74e3a95c9f2d117dc8c8782c5cc3b8a5d24
+Author: Christian Beier <info@christianbeier.net>
+Date:   Mon Sep 28 20:19:25 2020 +0200
+
+    README: don't list license under Problems
+
+commit 4d6a357031f9968bd5c00a9c6310545921ff8c66
+Author: Christian Beier <info@christianbeier.net>
+Date:   Tue Aug 4 17:08:14 2020 +0200
+
+    Detect GDK_CORE_DEVICE_EVENTS and act accordingly
+    
+    Closes #95
+
+commit a587772200cb02ce0d49473dd3903936367e868f
+Author: Christian Beier <info@christianbeier.net>
+Date:   Tue Aug 4 14:02:59 2020 +0200
+
+    input: use accessor function instead of g_object_get()
+    
+    re #95 #49
+
+commit 8d552715663c45fefa851754d0b1b05eaaa57a07
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sat Aug 1 13:52:11 2020 +0200
+
+    callbacks: update Copyright year
+
+commit 40a734ab333bb27ecc30a3a185792f8c42284a7e
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sat Aug 1 13:51:38 2020 +0200
+
+    CMake: patchlevel up
+
+commit af1d87618667f8be5601308306de00e1c85d862b
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sat Aug 1 13:44:33 2020 +0200
+
+    ChangeLog: update
+
+commit b5a3eeb9ba40455aff354c07ee6d49849b9d32e5
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sat Aug 1 13:43:55 2020 +0200
+
+    NEWS: update
+
+commit de164aeb380f2037d706511292b28db3957685c1
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sat Aug 1 13:39:17 2020 +0200
+
+    Update AUTHORS
+
+commit ca2347a326176b41d17a7bdf0fb7981dfe700406
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sat Aug 1 12:38:02 2020 +0200
+
+    NEWS: rename, markdownify and link
+
+commit 92d3ea144b2bcd33889e6d970db73f7c6f4dc93d
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sat Aug 1 12:23:36 2020 +0200
+
+    input: show user-visible gui dialogs on key grab fail
+    
+    Closes #77
+
+commit 009eef7c107eb598d59b41a10fd6e20292486ad0
+Author: Christian Beier <info@christianbeier.net>
+Date:   Sat Aug 1 11:50:50 2020 +0200
+
+    callbacks: add a very simple donation hint
+    
+    TODO: link website
+
+commit 7c83680253929e5bec4b882b763704653a679196
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sun May 17 19:13:17 2020 +0200
+
+    README: mention how to set eraser for some touchpads
+    
+    re #16
+
+commit 8d5aa920270439bacf423bbbdb30610bbbbd7f54
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sun May 17 18:57:13 2020 +0200
+
+    README: document how to disable drawing for all but one input device
+    
+    Closes #86
+
+commit 997f2c58cf36bbe18802d944c0f982e8265ad617
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sun May 17 18:53:49 2020 +0200
+
+    README: fix typo
+
+commit a451a1c055e61188a4258850cc3907f1c4809c6c
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sun May 17 15:16:40 2020 +0200
+
+    README: document how to configure minsize
+    
+    re #85
+
+commit dd50fcfaa05277484aa81b4603a992fb17f76234
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Fri May 1 14:55:47 2020 +0200
+
+    README: add a Gitter badge
+
+commit ffe968214c27689a182559b150f008d1d40c411d
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sat Apr 25 12:56:18 2020 +0200
+
+    CMake: make sure compile_commands.json is readable by ccls
+
+commit fbda8bd2d1997381e2b8aa9ea9bf944d642207ac
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sat Apr 18 17:43:26 2020 +0200
+
+    README: document how to set hotkeys w/ config file
+    
+    re #81
+
+commit 6964494b2a99e425867aed463d5e5244848a5947
+Author: Julián Unrrein <junrrein@gmail.com>
+Date:   Sun Mar 29 15:38:14 2020 -0300
+
+    config: set hot key and undo key only if they weren't changed from their default values already (#80)
+
+commit 0c9e6924ab5feef64f23ceeb837bddc0cba95dfb
+Author: Julián Unrrein <junrrein@gmail.com>
+Date:   Fri Mar 27 11:08:26 2020 -0300
+
+    Add the ability to configure the Hot key and Undo key in gromit-mpx.cfg (#78)
+    
+    Closes #40
+
+commit d9b1627c92d3a96b96a048d972da229ec36bc0ce
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Fri Mar 27 14:44:10 2020 +0100
+
+    input: log when hotkey or undo key grabbing fails
+    
+    re #77
+
+commit cc85db2f23c86b9fb608598a738a9b8ae2902e6c
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sat Mar 21 14:54:13 2020 +0100
+
+    .gitignore: add ccls cache dir
+
+commit 317e78471953194533d664c3cf60609dbf78490a
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sat Mar 21 14:50:12 2020 +0100
+
+    config: change default undo key to F8
+    
+    F10 seems to be grabbed by somehting else on at least GNOME 3.22.
+    Also, F10 is a common menu popup hotkey.
+
+commit 16cc6cc8ec5a81c873d12a64048500f0bf099c22
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sat Mar 21 14:39:36 2020 +0100
+
+    input: log which keys are to be grabbed
+
+commit ffeb900f56f6f64cc4513df65c2ad9c059fe34a2
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sun Jul 7 17:30:39 2019 +0200
+
+    input: fix 4 deprecation warnings
+
+commit 0b2054be8f1a54207f6872f1773da46b4e09bec6
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Wed Jul 3 18:55:58 2019 +0200
+
+    Update issue templates
+
+commit 38c8fdd036c3da5ba1179ebe473f6086d781ae37
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Wed Jul 3 16:17:04 2019 +0200
+
+    FUNDING.yml: update issuehunt
+
+commit e42a627143bc7dabb1e8387136b52ea67254367c
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Wed Jul 3 14:47:02 2019 +0200
+
+    FUNDING.yml: add issuehunt
+
+commit 07aaa6b8da1cfad49fa67f61dfb48f41252ef918
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Wed Jun 26 14:21:40 2019 +0200
+
+    README: update paypal badge
+
+commit cb0bcb46a4c651b5575eeab25c35cf9f5528d49e
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Wed Jun 26 14:20:43 2019 +0200
+
+    README: update liberapay badge
+
+commit 3be3d0ffaebe9f6959ca7ab13b95bd246e8727e7
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Wed Jun 26 14:15:43 2019 +0200
+
+    README: add patreon badge
+
+commit 6283d0ff89407998d9e639544a6d558f5d817489
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Wed Jun 26 14:02:54 2019 +0200
+
+    FUNDING.yml: add patreon
+
+commit 753fd58ff7cb69efe1a72c944598513f4a2154b5
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Wed Jun 26 12:11:27 2019 +0200
+
+    FUNDING.yml: fix syntax problems
+
+commit 48ebec6aad2dfa883d5691cd7f1d3e6d896477fd
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Wed Jun 26 12:09:18 2019 +0200
+
+    Create FUNDING.yml
+
+commit a0b7d5ba44bf7283777948874c895d655dd38bb4
+Author: Christian Beier <cb@shoutrlabs.com>
+Date:   Thu Apr 11 11:40:23 2019 +0200
+
+    CMake: export compile setttings for LSP
+
+commit bf5a8ef2747931b2307c8926cf4fa6c218d87ced
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Fri Dec 28 18:19:34 2018 +0100
+
+    README: add LiberaPay button
+
+commit 978d2079f228bbed0b1d4f520a4b96225cb0c470
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Fri Dec 28 17:25:30 2018 +0100
+
+    README: add a PayPal donate button
+
+commit 7594796c48a786dd5dc3ca821a4b3537f649a4ca
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Fri Dec 28 16:39:41 2018 +0100
+
+    Update ChangeLog
+
+commit b4ed990916d40c2c418d5e12f43672a8b2ddead8
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Fri Dec 28 16:37:58 2018 +0100
+
+    Update TODO
+
+commit 4bcaee501994817355eb4a87510dd6f072a592aa
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Fri Dec 28 16:30:28 2018 +0100
+
+    Update NEWS
+
+commit 05341fa4d17eb4c5a9eb63a5e04ddcc69992fec8
+Author: Christian Beier <cb@shoutrlabs.com>
+Date:   Fri Dec 28 16:16:04 2018 +0100
+
+    Update AUTHORS
+
+commit 718738752aa14efa172a57a618cba5c81caf77bc
+Merge: a185c56 c5506dd
+Author: Christian Beier <cb@shoutrlabs.com>
+Date:   Fri Dec 28 15:44:39 2018 +0100
+
+    Merge branch 'fix-slavehandling'
+
+commit c5506dd1025771bc23ee9f5855a52cf06f3e26c5
+Author: Christian Beier <cb@shoutrlabs.com>
+Date:   Fri Dec 28 15:42:07 2018 +0100
+
+    Allow configuration of slave devices, too
+    
+    This is a rework of 58bdef4d49ab4269fedda55e825ce8ad8a62076c.
+
+commit a185c564fd94759190d6c9363c5a66b04abfd7a7
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sun Dec 2 23:22:12 2018 +0100
+
+    README: fix issues pointed out by markdownlint
+
+commit 032d46f5e3a20d428c5a071178ae4f328e429454
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sun Dec 2 23:03:30 2018 +0100
+
+    CMake: fix build-config.h template header guard
+
+commit 2b21482e16a010f026d1a81d822b8876429584fa
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sun Dec 2 22:41:34 2018 +0100
+
+    Add stdint.h to define intptr_t on all compilers
+
+commit 53062c7427983d5f2c6669ecc127bf8870ceccdb
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Mon Nov 26 22:11:15 2018 +0100
+
+    Remove proximity event handling
+    
+    It is not supported in XInput2.
+
+commit b16c685e6b1ad9787481c93d1ef7516c8392c255
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Mon Nov 26 13:10:51 2018 +0100
+
+    Remove last slave handling remnants
+
+commit cc3c090a96c91d758299cfafdfecd361450c9dd2
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Mon Nov 26 12:42:30 2018 +0100
+
+    Revert "Add reasonably complete support for slave devices."
+    
+    This reverts commit 58bdef4d49ab4269fedda55e825ce8ad8a62076c.
+    
+    Closes #29
+
+commit bd47b373fedd6aecf066644a08c8eb68247a9e40
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Mon Nov 26 12:12:54 2018 +0100
+
+    Revert "Only grab master devices."
+    
+    This reverts commit 335ff721b4416a4d5cd03a987f81716101e03540.
+
+commit 017c4f4b5d033e6686e99a8e57fd220d6da2f93b
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Mon Nov 19 17:10:48 2018 +0100
+
+    README: fix typo
+
+commit a751b83a303a865fa5dc157e9f40b05c92c4f58d
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Mon Nov 19 11:10:02 2018 +0100
+
+    README: fix linking
+
+commit 080282e14b5235bd9176636b68d9f01b32777cdb
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Mon Nov 19 11:07:11 2018 +0100
+
+    README: add instructions on how to setup MPX
+    
+    Closes #59
+
+commit c451f01410b30827d317be0856ba4be614359142
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Mon Nov 19 10:22:34 2018 +0100
+
+    README: move the 'Configuration' section into 'How to use'
+
+commit 2f7ca97200b14bdaed8c5d7e47212e5d6e9bc929
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Mon Nov 19 10:11:11 2018 +0100
+
+    README: fix headings
+
+commit ee6815e458eb1710e703ed41b3f097501099023b
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sun Nov 4 17:53:57 2018 +0100
+
+    config: use pre glib-2.44 style
+
+commit 1eef4b5d27648d88926ad3932f135ea75f8ebab8
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sun Nov 4 16:22:46 2018 +0100
+
+    Add an introduction screen
+    
+    This replaces the old poor-man's help screen and hopefully serves its
+    purpose of telling users about the hotkeys better.
+    
+    In the wake of adding this, Gromit-MPX also received a basic config
+    system based on GKeyFile, which some day might replace the handwritten
+    config parser we rely on now.
+    
+    GKeyFile was not there when Simon started the original Gromit (it
+    appeared around 2004), so he had to resort to GScanner.
+    
+    Closes #56
+
+commit d96106f9a30b2bc377a5f9a1c3d95f3dcbf37719
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sat Nov 3 16:28:00 2018 +0100
+
+    README: fix typo
+
+commit f3ddd27ab65787d4afbc40ce40ff716d293a1fdb
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sat Nov 3 13:21:32 2018 +0100
+
+    CMake: add xpms to sources
+
+commit 07e3dd3d322032f86047889b38fc793b7cb77ca2
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sat Nov 3 13:10:30 2018 +0100
+
+    Remove the now-obsolete help menu entry
+
+commit 487a6e3035b57b02421a4c1a9bb180a072500514
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sat Nov 3 12:55:09 2018 +0100
+
+    Update man page date
+
+commit a7122e4cdea2ba7e238202f6ebb25b0fadefeb18
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sat Nov 3 12:52:39 2018 +0100
+
+    Order options in manpage alphabetically
+
+commit 0022af97aec57f6db0cf1f8ddb49e0537f083697
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sat Nov 3 12:49:28 2018 +0100
+
+    Add opacity-setting to man page
+    
+    Closes #54
+
+commit 2c8dd6391e733723a93098bdcfcb3ef9d13c478a
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sat Nov 3 12:46:47 2018 +0100
+
+    Make the opacity error message locale-independent
+
+commit 4c2eb4f3eb7a519fbe62f5fde6a9d399b03308d1
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sat Nov 3 12:29:18 2018 +0100
+
+    Directly show hotkeys in the menu
+    
+    re #42 #56
+
+commit a4103b2fa1c40965df2f219d126b0a9596689a3f
+Author: Christian Beier <cb@shoutrlabs.com>
+Date:   Mon Oct 29 13:16:47 2018 +0100
+
+    Add screen size values to on-change debug log
+    
+    re #55
+
+commit 40f928f1bcfdc1e47aa6d8ee2eb29f5551c231c1
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sun Oct 28 22:53:35 2018 +0100
+
+    Update copyright year
+
+commit 3f85689b9fe3e371873643c2a8fd9d5605b8738f
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sun Mar 18 15:28:19 2018 +0100
+
+    Make select_tool debug logs a bit clearer
+
+commit 73caad9023dbeb1037830f2d0d3984aad723aefc
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sun Mar 18 15:07:20 2018 +0100
+
+    Prefix select_tool debug logs
+
+commit 6cc126bf4a4a5608d02aaeb488583bfaaa849aa2
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Mar 8 01:56:43 2018 +0100
+
+    README: add a note about maybe-missing sys tray
+    
+    Closes #47.
+
+commit df4194b332dbfad5eb6341b9f8a19b32b47a489c
+Merge: 295a34b 5ce93ee
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sun Feb 25 18:12:58 2018 +0100
+
+    Merge pull request #48 from Fusl/master
+    
+     Allow not grabbing undo-key
+
+commit 5ce93ee0e32950f6fdfc7ddd391e8820ef7b9e5d
+Author: Katie Holly <git@meo.ws>
+Date:   Wed Feb 14 03:09:28 2018 +0100
+
+    Adding `build/` directory to .gitignore (documented in README.md)
+    
+    Signed-off-by: Katie Holly <git@meo.ws>
+
+commit b67083b32d077e0bd4e0b623adc515230acc9880
+Author: Katie Holly <git@meo.ws>
+Date:   Wed Feb 14 03:08:31 2018 +0100
+
+    Allow unbinding undo-key
+    
+    Signed-off-by: Katie Holly <git@meo.ws>
+
+commit 295a34b164788d8826892bd108eb2edfc90cc204
+Merge: 218e75a d627d3c
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sun Dec 4 18:07:01 2016 +0100
+
+    Merge pull request #39 from barak/upstream
+    
+    add ENVIRONMENT and FILES man page sections
+
+commit d627d3c05e432750fcf0e4ec540ee4f3ab97be87
+Author: Barak A. Pearlmutter <barak+git@pearlmutter.net>
+Date:   Sun Dec 4 17:12:38 2016 +0100
+
+    add ENVIRONMENT and FILES man page sections
+
+commit 218e75a593f5268a244f1e50a750d9b3486b4863
+Merge: ad169c9 cfc916f
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sun Nov 20 12:35:57 2016 +0100
+
+    Merge pull request #36 from barak/tweaks
+    
+    cmake installation dirs
+
+commit cfc916f63803e3a8e1dde7a35c5fc5191d7711eb
+Author: Barak A. Pearlmutter <barak+git@pearlmutter.net>
+Date:   Sat Nov 19 15:19:28 2016 +0000
+
+    cmake installation dirs
+
+commit ad169c97034fecc9768cbec9033fad7c65ba7e03
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Fri Nov 18 19:37:59 2016 +0100
+
+    Next version will be 1.3.
+
+commit a11478c3bdbc26e443a7cd4ab8d0f9e1f0683481
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Fri Nov 18 19:36:39 2016 +0100
+
+    Remove Autotools, CMake now is the only build system.
+
+commit eba556e20bc1b3abc556d8c73ff12beeb838b839
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Fri Nov 18 14:31:40 2016 +0100
+
+    TravisCI: swtich to cmake as default build system
+
+commit a835decff6d0186bd96075bca8ed31144f2ff9e2
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Wed Nov 16 22:44:50 2016 +0100
+
+    Update ChangeLog.
+
+commit c2b4d4a044edea046494e6c628c01ea26e8246a5
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Wed Nov 16 22:34:09 2016 +0100
+
+    Make the line thickness changer applicable to mouse drawing as well.
+    
+    This commit removes the special mouse handling by settings default
+    pressure to full-on. Thus, dynamic line thickness will be taken into account
+    for mouse events as well now.
+
+commit 5b50ba374d5c46e5cc3ee3e9e5d9d3501e6ce5ad
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Wed Nov 16 20:04:38 2016 +0100
+
+    CMake: mark all libs as required.
+
+commit d38cb4217a9eb42178285a12716bd4308bebcd8d
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Wed Nov 16 11:51:10 2016 +0100
+
+    Update man page a bit.
+
+commit 1b6c55804e80a1483cdf66afaa7c1e6db101c25a
+Author: Christian Beier <cb@shoutrlabs.com>
+Date:   Tue Nov 15 20:13:59 2016 +0100
+
+    Fix help dialog formatting.
+    
+    Was broken by 463afe30133b5e8cc814c77aef4e186696d55eca.
+
+commit fc00515902d387dc4b99c6aa5eb80f04cc714d14
+Author: Christian Beier <cb@shoutrlabs.com>
+Date:   Tue Nov 15 19:42:53 2016 +0100
+
+    Update NEWS.
+
+commit 806562e917c1a148e36be56fe427c1fc93967928
+Author: Christian Beier <cb@shoutrlabs.com>
+Date:   Tue Nov 15 19:25:31 2016 +0100
+
+    Update TODO.
+
+commit b09bc0117fd65965570771360e8854c52e35f920
+Merge: 8cf5da1 ce06532
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Tue Nov 15 19:22:38 2016 +0100
+
+    Merge pull request #33 from russel/cmake-build
+    
+    Add a first cut at a CMake build system
+
+commit ce065329e314ee63564ea0d36fdd72e0626b5296
+Author: Russel Winder <russel@winder.org.uk>
+Date:   Sun Nov 13 08:10:09 2016 +0000
+
+    Add a first cut at a CMake build system – allows for use of CLion as IDE.
+
+commit 8cf5da19e10cab9b985e84852942a2e1b6cea1cb
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Mon Nov 14 10:46:46 2016 +0100
+
+    TravisCI: add a build badge to README.md.
+
+commit 35bb13f2846f32add7700c4a14981020d8417e2e
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Mon Nov 14 10:43:35 2016 +0100
+
+    TravisCI: switch to a more recent Ubuntu.
+
+commit 4d72eb7c0f1827626261590a04b55e07a58e6918
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Mon Nov 14 09:26:04 2016 +0100
+
+    Add automake to Travis build deps.
+
+commit ac31c08f81452b3834a922658b3468e6a961d12d
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Mon Nov 14 09:19:07 2016 +0100
+
+    Add a .travis.yml file.
+
+commit 7a3c494425d70e37076f86c18380f29ed017da41
+Merge: a3bd7ab 620bc36
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Mon Nov 14 08:57:18 2016 +0100
+
+    Merge pull request #34 from barak/upstream
+    
+    minor matters noted while packaging latest development version
+
+commit 620bc3677d130722a235035052c74b81a0c1ac7e
+Author: Barak A. Pearlmutter <barak+git@pearlmutter.net>
+Date:   Sun Nov 13 23:05:43 2016 +0000
+
+    add desktop file keywords, silencing lintian tag desktop-entry-lacks-keywords-entry
+
+commit 463afe30133b5e8cc814c77aef4e186696d55eca
+Author: Barak A. Pearlmutter <barak+git@pearlmutter.net>
+Date:   Sun Nov 13 22:35:01 2016 +0000
+
+    address gcc -Werror=format-security
+
+commit 545f5e84265fc1e18927d8b2f453c77b1c8e66ad
+Author: Barak A. Pearlmutter <barak+git@pearlmutter.net>
+Date:   Sun Nov 13 22:28:06 2016 +0000
+
+    AX_CFLAGS_WARN_ALL and automake subdir-objects
+
+commit 13a967101475409d57fb96a6514683b3d5cc0e75
+Author: Barak A. Pearlmutter <barak+git@pearlmutter.net>
+Date:   Sun Nov 13 22:12:33 2016 +0000
+
+    git ignore build debris
+
+commit a3bd7ab8028d4544d7396e9bcf69abdf2862356a
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sun Nov 13 01:04:29 2016 +0100
+
+    Only use the X11-specific bits in input device setup when actually running on an X11 display.
+
+commit efb3e4a603e33487c9b51e9eb92e65ba42555a4a
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sat Nov 12 20:34:40 2016 +0100
+
+    Use a commonly available font for the SVG icon.
+
+commit 6ca9dc53a55e07bcb9c4edc0870664017a1d6487
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sat Nov 12 20:29:58 2016 +0100
+
+    Update SVG icon.
+
+commit 20dee4f7aac4da4fa1c45c53b9da19846175eef5
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sat Nov 12 20:10:58 2016 +0100
+
+    Convert the tray icon code to be compatible to Ubuntu-Unity.
+
+commit b9df54f24b9100653268423039c3acdab28a1a78
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sun Oct 16 17:57:30 2016 +0200
+
+    Add a poor man's help dialog displaying at least the hot key commands.
+
+commit b98a9ef9da63afa1093d15dea5e606f4c9921126
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sun Oct 16 15:50:03 2016 +0200
+
+    Add (still empty) help menu item.
+
+commit 9db0439a2ec9ec9ad79827ad0cf8c15530c462c6
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sun Oct 16 14:03:39 2016 +0200
+
+    Version up.
+
+commit 519767765d9bf91e85a6f09776ffc82460268e16
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sun Oct 16 14:03:03 2016 +0200
+
+    Get the About dialog version from the build system.
+
+commit 5fc19c7f68fa4151b7e3bf20824e31bfb1d308a4
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sat Oct 15 16:51:28 2016 +0200
+
+    Rework try icon menu to be device-specific.
+    
+    Problem though is that GDK always reports the core pointer, event if another
+    master clicked the menu. mhhh.
+
+commit f83c153ea76e17825ddbfc333754eb208a5deb28
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Fri Oct 14 16:43:56 2016 +0200
+
+    Revert "flatten into single Makefile.am"
+    
+    This reverts commit 2bb6f900f144332b08016d390450fc42b7d8f889.
+    
+    It made developing cumbersome as make has to be called from outside the
+    source directory.
+
+commit d632a9a823500bc650e8e9c526216fc9199eaebe
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Fri Oct 14 15:04:53 2016 +0200
+
+    Fix two more warnings.
+
+commit 917d8c10f11db115d328ed5738056d536bbfb34f
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Fri Oct 14 15:03:30 2016 +0200
+
+    Convert all deprecated GdkColor stuff to GdkRGBA.
+
+commit 04bb86fa5bb82ee0443dbfe4fbef7a1739467df2
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Fri Oct 14 14:38:42 2016 +0200
+
+    Add an About dialog.
+    
+    Version still hardcoded...
+
+commit c8ea7dd4e0fc54e4d54093a6bdf8d9235622af4c
+Author: Christian Beier <cb@shoutrlabs.com>
+Date:   Mon Oct 10 20:16:58 2016 +0200
+
+    Rework ther systray icon find logic to something that actually works.
+
+commit 4ebf4c89f29a14a764e6667cd74166546e132899
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Mon Oct 10 10:23:44 2016 +0200
+
+    Fix path to installed systray icons.
+
+commit 721dd2afc936a1322beae43fba970d29bbd82501
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Mon Oct 10 10:20:46 2016 +0200
+
+    Use the SVG icon for the tray.
+
+commit 52ffa118ff4c2f8923681198507301a2e55b5165
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Mon Oct 10 10:20:25 2016 +0200
+
+    Fix font and clipping on SVG icon.
+
+commit 7bc446198a164ad10f7936aa883f0b5f1808ff30
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Mon Oct 10 10:03:19 2016 +0200
+
+    Change the SVG icon to more resemble the original PNG one.
+
+commit ded5df902b3b1b4c674e9edf65981c747b218318
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Mon Oct 10 09:52:10 2016 +0200
+
+    Try to load tray icon from different locations.
+
+commit 3ed28df1135898529b78e94a3dcaba7bc015187d
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sun Oct 9 15:58:29 2016 +0200
+
+    Replace some more deprecated calls in callbacks.c.
+
+commit 1ec34cfeedec9504ccd6e559ca42b176de344c79
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sun Oct 9 15:56:57 2016 +0200
+
+    Replace some deprecated GTK/GDK functions.
+
+commit 7bc5f21fd2f8033320d927c5765e47705a9dd81f
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sat Oct 8 18:34:45 2016 +0200
+
+    Get rid of the X11 intrinsics to find the paired device in snoop_key_press().
+
+commit 53f981df8e469f1e3c2c19fd2ae1eec0c2d80619
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sat Oct 8 17:12:30 2016 +0200
+
+    Add a motion debug log.
+
+commit 6d463e7a7b38c74ea5ba7d29ca672fad9b965a87
+Merge: 2abb29b 7374264
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Fri Oct 7 01:18:59 2016 +0200
+
+    Merge pull request #26 from tobias47n9e/patch-1
+    
+    README: Add some required packages for building
+
+commit 73742645a5d55bba88c23024d1c883457be8af34
+Author: Tobias Schönberg <tobias47n9e@gmail.com>
+Date:   Thu Oct 6 20:57:24 2016 +0200
+
+    README: Add some required packages for building
+
+commit 2abb29b9ba6aeee5644602bf65aba44664b16e03
+Merge: 98e92c2 2bb6f90
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Aug 27 12:29:01 2015 +0200
+
+    Merge pull request #21 from barak/tweaks
+    
+    Tweaks from barak
+
+commit 98e92c282e160889db2c17330945e897cd59093a
+Merge: fe9f718 bb5688e
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Mon Aug 24 12:35:47 2015 +0200
+
+    Merge pull request #20 from Tuxilero/master
+    
+    Opacity support
+
+commit bb5688e9cee6551d66c2c4ae5479aad352d411a1
+Author: Lukas Hermann <tuxilero@gmail.com>
+Date:   Sat Aug 22 17:50:48 2015 +0200
+
+    Update README.md
+
+commit ecb5d9f022bd736190d7d0c91ecb2f8aefcce496
+Merge: 344c69a 4ea5ed0
+Author: Lukáš Hermann <tuxilero@gmail.com>
+Date:   Fri Aug 21 13:50:05 2015 +0200
+
+    Merge branch 'master' of https://github.com/Tuxilero/gromit-mpx
+
+commit 344c69a2fd59db2070b5f8f4ec8d84393655802d
+Author: Lukáš Hermann <tuxilero@gmail.com>
+Date:   Fri Aug 21 13:49:33 2015 +0200
+
+    Opacity menu entry, argument fix
+
+commit 4ea5ed078c4df3f666a61a349c003b4d8baa20a0
+Author: Lukas Hermann <tuxilero@gmail.com>
+Date:   Fri Aug 21 11:58:57 2015 +0200
+
+    Update README.md
+
+commit 188dd42cbf1db93606e4108f1f52500279f42a4d
+Author: Lukáš Hermann <tuxilero@gmail.com>
+Date:   Fri Aug 21 11:57:07 2015 +0200
+
+    Opacity support
+
+commit fe9f718c932aea8828a06f5df096c52d8d08f57b
+Merge: a506290 bb51710
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sun May 10 18:03:09 2015 +0200
+
+    Merge pull request #17 from wavexx/minwidth
+    
+    Add minsize as a pen setting (defaulting to 1).
+
+commit 2bb6f900f144332b08016d390450fc42b7d8f889
+Author: Barak A. Pearlmutter <barak+git@cs.nuim.ie>
+Date:   Thu May 7 16:19:24 2015 +0100
+
+    flatten into single Makefile.am
+
+commit db7d9bf8990b4b7b56d53b031fe30c19795cb9e2
+Author: Barak A. Pearlmutter <barak+git@cs.nuim.ie>
+Date:   Thu May 7 16:13:48 2015 +0100
+
+    fix clipped svg icon
+
+commit 5a7f6333b06e268b0d83e10c2c725d888f9cff1f
+Author: Barak A. Pearlmutter <barak+git@cs.nuim.ie>
+Date:   Thu May 7 16:03:50 2015 +0100
+
+    update construct in configure.ac
+
+commit bb51710f4f3371480030ae7f9d6da91a1f37e6ea
+Author: Yuri D'Elia <yuri.delia@eurac.edu>
+Date:   Thu May 7 14:39:03 2015 +0200
+
+    Add minwidth as a pen setting (defaulting to 1).
+
+commit a506290adff369962a4eab3c2865285221af223e
+Author: Christian Beier <cb@shoutrlabs.com>
+Date:   Tue Feb 3 14:01:04 2015 +0100
+
+    Add debug output if user conf file not found.
+
+commit a9a76ac0c97ef3852c22c099e59145a576101d67
+Merge: 964b161 05a2c0b
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sun Mar 30 06:38:05 2014 +0200
+
+    Merge pull request #14 from barak/upstream
+    
+    install README.md
+
+commit 05a2c0bff71d5747b599a04727d428e89ce40fa0
+Merge: fb3c7f8 964b161
+Author: Barak A. Pearlmutter <barak+git@cs.nuim.ie>
+Date:   Sat Mar 29 22:40:24 2014 +0000
+
+    Merge remote-tracking branch 'upstream/master' into upstream
+
+commit 964b1615700b5c84c5fc8a1d41e86092bb4876a2
+Merge: 4f9e690 16aba76
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sat Mar 29 06:37:58 2014 +0100
+
+    Merge pull request #13 from mehmetaergun/patch-2
+    
+    typo fix without the i
+
+commit 16aba766e6d3a7e7c5df296e6d208c51e859895f
+Author: Mehmet Atif Ergun <mehmetaergun@users.noreply.github.com>
+Date:   Sat Mar 29 00:33:44 2014 -0400
+
+    typo fix without the i
+
+commit fb3c7f8f54961226d9cde7f137522b90f9d4e7d3
+Author: Barak A. Pearlmutter <barak+git@cs.nuim.ie>
+Date:   Thu Mar 20 13:46:14 2014 +0000
+
+    inform build system that README is now README.md
+
+commit 4f9e690f2b98743fcc2164e0c666372a54101725
+Merge: 2bac387 a7ba808
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Wed Mar 19 15:16:08 2014 +0100
+
+    Merge pull request #11 from barak/upstream
+    
+    Upstream
+
+commit a7ba80827b0a14682dacd99758f1cc727ed73b91
+Author: Barak A. Pearlmutter <barak+git@cs.nuim.ie>
+Date:   Wed Mar 19 13:31:00 2014 +0000
+
+    further markdown-ify README.md
+
+commit 59573f69df610295a918408a45fca2c4edd07b50
+Author: Barak A. Pearlmutter <barak+git@cs.nuim.ie>
+Date:   Wed Mar 19 13:27:11 2014 +0000
+
+    markdown-ify README.md
+
+commit e9ee9c5689be5da8df89c8f3fd18b3a8e0b94772
+Author: Barak A. Pearlmutter <barak+git@cs.nuim.ie>
+Date:   Wed Mar 19 13:05:20 2014 +0000
+
+    mv README README.md
+
+commit aa7be9975835e9e3c86c50470f812e9adc34f111
+Author: Barak A. Pearlmutter <barak+git@cs.nuim.ie>
+Date:   Wed Mar 19 12:58:45 2014 +0000
+
+    trim whitespace in README
+
+commit 2bac387a5bf84029ce69a0f33757b4c6fe52372a
+Merge: 6112ffa 41c09e1
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Tue Mar 18 12:38:00 2014 +0100
+
+    Merge pull request #10 from TaoK/patch-1
+    
+    Update README to reference similar tools
+
+commit 41c09e16f35f2247a22727add4896cd2f873d8f9
+Author: Tao Klerks <tao@klerks.biz>
+Date:   Mon Mar 17 15:58:25 2014 -0400
+
+    Update README to reference similar tools
+    
+    Adding some references to equivalent or similar utilities for Windows (and Linux) works both ways - would make it easier to find this if you know the windows tools, and helps those who (like me) find the Linux utility but have a hard time finding the windows equivalent.
+
+commit 6112ffaa144b37fd785475976de23db652acedf1
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Mon Nov 4 18:14:41 2013 +0100
+
+    Put the backend check into the backend specific file.
+
+commit 717b7d6d241209d7565b7141695c8c01b8bda52d
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Mon Nov 4 17:33:04 2013 +0100
+
+    Add GDK platform support check.
+
+commit 64a46929326323f32eb99625e8b2253fcbea8273
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sat Nov 2 15:15:26 2013 +0100
+
+    Move X11 specific stuff into input.c, prepping for native Wayland support some time.
+
+commit 1e4e806d46c6836b57531eefc83fb6b0a9d6db52
+Merge: 1f34d32 42c44ca
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Oct 17 13:35:53 2013 -0700
+
+    Merge pull request #8 from nwhitehead/undo
+    
+    Add simple undo functionality.
+
+commit 42c44caa4f505454d08898a34694cac759ab686e
+Author: Nathan Whitehead <nwhitehe@gmail.com>
+Date:   Wed Oct 16 12:03:55 2013 -0700
+
+    Document undo/redo hotkey binding.
+
+commit a649282cf2532751b26e448f444efa6573380852
+Author: Nathan Whitehead <nwhitehe@gmail.com>
+Date:   Wed Oct 16 11:57:50 2013 -0700
+
+    Add undo/redo hotkey.
+    
+    Press of undo hotkey is undo, shift-press is redo.
+    No action when window is hidden.
+
+commit 974cb7bbf7f94eb6f061a3a1042935e93e268eb7
+Author: Nathan Whitehead <nwhitehe@gmail.com>
+Date:   Wed Oct 16 11:07:00 2013 -0700
+
+    Add undo/redo menu items to systray menu.
+
+commit d05872ea6ef9ff508877abba184b0589b496257f
+Author: Nathan Whitehead <nwhitehe@gmail.com>
+Date:   Wed Oct 16 10:34:04 2013 -0700
+
+    Update documentation for undo/redo.
+
+commit 3f94c3e1fce50c46a2223b52a5160f62f5160f14
+Author: Nathan Whitehead <nwhitehe@gmail.com>
+Date:   Wed Oct 16 10:24:38 2013 -0700
+
+    Add multiple levels of undo/redo.
+    
+    Allows undo/redo using --undo and --redo commands. Currently preallocates
+    large surfaces to save entire drawing state, wastes memory.
+
+commit bc7b69e463c87559162f82b1529dbc2a20cb1624
+Author: Nathan Whitehead <nwhitehe@gmail.com>
+Date:   Wed Oct 16 00:12:22 2013 -0700
+
+    Add simple undo functionality.
+    
+    An extra backing surface is used to record the screen state between
+    strokes. Adds "gromit-mpx --undo" and "gromit-mpx --redo" commands.
+    Both have the same effect, swap undo backing surface and current
+    backing surface. Prepares for future multiple levels of undo and redo.
+
+commit 1f34d327397f0fa6d1c8171fe3beb4f3eaaf393f
+Merge: e24553c 51043ae
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sat Aug 31 08:27:10 2013 -0700
+
+    Merge pull request #4 from AlisterH/patch-1
+    
+    Update README: correct references to the config file and its location
+
+commit 51043aeef906412fb66856d8fa8c7ca32604ccdd
+Author: AlisterH <alister.hood@gmail.com>
+Date:   Sat Aug 31 16:39:02 2013 +1200
+
+    Update README: correct references to the config file and its location
+
+commit e24553c6bf42fc8dffe3a4ab341e42469059d62c
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Mon Aug 19 20:58:19 2013 +0200
+
+    Update version to 1.1.
+
+commit 2d0542bdca5f1ba2d5fad8b0b7dfc4cddd9f4e1a
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sun Aug 18 14:23:55 2013 +0200
+
+    Update README with more precise build instructions.
+
+commit 1f3714d8d0f178d2267d3d3b6db678a2420fc7bb
+Merge: e3af81c 78cfa4f
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Tue Aug 13 10:51:59 2013 -0700
+
+    Merge pull request #1 from barak/upstream-tweaks
+    
+    Merge work done by Barak A. Pearlmutter: autotools update, icon and desktop file update, silence compiler warnings etc.
+
+commit 78cfa4fdb33d41123997fe77a15a51afc97e8bad
+Author: Barak A. Pearlmutter <barak+git@cs.nuim.ie>
+Date:   Tue Aug 13 00:42:21 2013 +0200
+
+    update URL to new upstream home
+
+commit fd49ec62fe87c540c8f029a3aa0cdacf9fc2d4c6
+Merge: e9fe472 e3af81c
+Author: Barak A. Pearlmutter <barak+git@cs.nuim.ie>
+Date:   Tue Aug 13 00:35:02 2013 +0200
+
+    Merge branch 'upstream' into upstream-tweaks
+
+commit e3af81c48baba3cd12538d94c670e5e6f7fcf0bd
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Tue Aug 13 00:04:29 2013 +0200
+
+    Rename Gromit mentions in stderr to Gromit-MPX.
+
+commit 142c4ed39d66d4ae613bb5987f3bda517406eb6c
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Tue Aug 13 00:02:27 2013 +0200
+
+    Do not use a leading . for files stored in $XDG_CONFIG_HOME.
+
+commit e9fe4723bd263e50f6bc2af7afe2e7fd719d35bc
+Author: Barak A. Pearlmutter <barak+git@cs.nuim.ie>
+Date:   Sat Feb 16 23:52:42 2013 +0000
+
+    line thickener menu item
+
+commit 1e45014a2bbb352f666e87983f7c6fb987aff69b
+Author: Barak A. Pearlmutter <barak+git@cs.nuim.ie>
+Date:   Mon Feb 11 10:12:36 2013 +0000
+
+    thicken MPX on icon for visibility
+
+commit 726aed3a2baa83a80e88c519c8fdb891a79e4d33
+Author: Barak A. Pearlmutter <barak+git@cs.nuim.ie>
+Date:   Fri Feb 8 14:22:01 2013 +0000
+
+    remove debian subdirectory from package proper
+
+commit 07a3eed9489a63f8542ae1cab846516fd8f4d964
+Author: Barak A. Pearlmutter <barak+git@cs.nuim.ie>
+Date:   Fri Feb 8 14:21:43 2013 +0000
+
+    move man page into package proper
+
+commit fd0df3ba22d9f493c7199e66b9ba1ca3b37f7a26
+Author: Barak A. Pearlmutter <barak+git@cs.nuim.ie>
+Date:   Sun Feb 10 23:14:50 2013 +0000
+
+    add cpp macro DEFAULT_HOTKEY that can be -D'ed at compile time
+
+commit 8798bbec36f4798fd3bca68030e15e917d42da03
+Author: Barak A. Pearlmutter <barak+git@cs.nuim.ie>
+Date:   Sun Feb 10 15:19:31 2013 +0000
+
+    change font of "MPX" in scalable icon
+
+commit 2f6c3c759aff912f680188e7889d44a3dfc053d9
+Author: Barak A. Pearlmutter <barak+git@cs.nuim.ie>
+Date:   Thu Feb 7 16:46:53 2013 +0000
+
+    Add "MPX" to scalable icon.
+
+commit 358b6c43bb19b7fd852ab1eec07caf2895298251
+Author: Barak A. Pearlmutter <barak+git@cs.nuim.ie>
+Date:   Thu Feb 7 16:38:59 2013 +0000
+
+    Add scalable icon, copied from debian gromit git repo; inform Makefile.am
+    
+    The scalable icon is installed in .../icons/scalable/apps/
+
+commit 7ed810b2185df1cc5d3af919260e03787c2ce1e2
+Author: Barak A. Pearlmutter <barak+git@cs.nuim.ie>
+Date:   Thu Feb 7 10:37:42 2013 +0000
+
+    Git ignore build debris.
+
+commit aa95fa9407228a26d1110216ce2eb8f1b5411caf
+Author: Barak A. Pearlmutter <barak+git@cs.nuim.ie>
+Date:   Thu Feb 7 10:36:18 2013 +0000
+
+    Update autotools.
+    
+    Delete autogen.sh as this script is unnecessary.
+    Just use: autoreconf --install
+    
+    Run autoupdate, autoscan.
+    
+    Remove gromit_mpxdocdir; docdir is standard and points to the correct
+    package-specific documentation directory.
+    
+    Remove -lm from Makefile.am, instead support in configure.ac
+    
+    Appropriate AC_SUBSTs are done inside PKG_CHECK_MODULES, can remove
+    from configure.ac.
+    
+    Pass libraries from configure to make via standard interface: LIBS.
+    
+    Prune configure.ac debugging support (-DDEBUG is unused) and
+    migrate remaining extra compiler warning options to Makefile.am.
+    
+    Add correct package bug report pointer and homepage.
+    
+    Delete INSTALL, as it is created by autoreconf (if foreign is removed.)
+    
+    Automake maintainer-mode is goo is deprecated, remove.
+
+commit 753fc6e876f502dc3556f6ee3098dd161840ba62
+Author: Barak A. Pearlmutter <barak+git@cs.nuim.ie>
+Date:   Thu Feb 7 16:05:33 2013 +0000
+
+    Snarf desktop file tweaks from repo: git://github.com/pld-linux/gromit
+
+commit ac6aeebe20173ea3a7435f6b5447849b3b688450
+Author: Barak A. Pearlmutter <barak+git@cs.nuim.ie>
+Date:   Thu Feb 7 11:04:37 2013 +0000
+
+    Address desktop-file-validate issues.
+
+commit fe1c5b1ad0fbee9768c0e954ec9c0ab9c22e0bc8
+Author: Barak A. Pearlmutter <barak+git@cs.nuim.ie>
+Date:   Thu Feb 7 15:55:56 2013 +0000
+
+    Remove unused variable have_key.
+
+commit f6296ed45397d38bb531cd4e738ced3e8babc132
+Author: Barak A. Pearlmutter <barak+git@cs.nuim.ie>
+Date:   Thu Feb 7 15:52:28 2013 +0000
+
+    Silence sign/size compiler warnings.
+
+commit 5b224b9792ccdb52f50740ca3c124331bf707049
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Mon Sep 3 16:33:29 2012 +0200
+
+    Use XDG .config dir for user config file.
+
+commit 335ff721b4416a4d5cd03a987f81716101e03540
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Mon Sep 3 16:25:39 2012 +0200
+
+    Only grab master devices.
+    
+    If we grab slaves as well, we get no input at all.
+
+commit 58bdef4d49ab4269fedda55e825ce8ad8a62076c
+Author: Monty Montgomery <xiphmont@gmail.com>
+Date:   Mon Sep 3 16:03:47 2012 +0200
+
+    Add reasonably complete support for slave devices.
+    
+    The current code doesn't see slave devices. I'm guessing it all worked
+    when you originally updated the code since most of the support was already
+    there, but it got broken by further shifts in the XI2 model.
+    
+    1) I have a thinkpad tablet and the old gromit (which otherwise worked
+    rather poorly) let me configure the
+    trackpad/touchpoint/touchscreen/wacom pen and wacom eraser separately.
+    Gromit-mpx only sees 'Virtual Core Pointer'.  This patch adds
+    (updates?) slave visibility through XI2.
+    
+    2) Proximity events are deprecated (they're still in the headers but
+    do nothing).  I've eliminated that code and gone to a strategy of
+    doing 'proximity' events through mouse motion.
+
+commit e5d460eca4ccc3021ddd3eb8ea7aa08700afc21a
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Mon Sep 3 15:49:41 2012 +0200
+
+    Enable silent make if available.
+
+commit 16a8dfcf8909f74ee303d23d33a5bf304ff42918
+Author: Monty Montgomery <xiphmont@gmail.com>
+Date:   Mon Sep 3 15:18:44 2012 +0200
+
+    Reduce the requested height in the size_request by one.
+    
+    The GNOME3 panel doesn't hide then when gromit-mpx is activated.
+    It looks like the panel is doing this on purpose because we're on top
+    and it thinks we want full screen.
+
+commit 13d2e8e19868737d80fe6c1d9ab480cddb62eb1c
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Oct 27 01:50:53 2011 +0200
+
+    Add libm to linker flags.
+
+commit 761b882b422a4fcb7ce556a40e04a356bbc906dc
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Jul 14 00:01:56 2011 +0200
+
+    Add libx11 dependency since we're using XSync().
+
+commit f2d99ce4d55374cd0d7901f6db30fe4593d7e346
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Mon May 9 18:37:21 2011 +0200
+
+    Fix crash when grabbed device goes away.
+
+commit 31219f4243849174ebcac230b726333f8fb97e66
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Fri Apr 29 18:40:44 2011 +0200
+
+    Get rid of extra build flags.
+
+commit 73c52d654c9e54f73d0a05dc5134d8544a6a68a1
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Fri Apr 29 18:37:46 2011 +0200
+
+    Use XSync() instead of gdk_flush().
+
+commit baa86b20462083bbb03b7239a463cddf1f3c26d3
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Fri Apr 29 18:36:17 2011 +0200
+
+    Fix build dep.
+
+commit 43f73854d457856064df21dab7381cc97bb005ac
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sat Feb 12 17:52:01 2011 +0100
+
+    Some more tray icon work.
+
+commit e8e09bd806bbbe1f4dab0e1b1e442c075c043bda
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sat Feb 12 16:33:07 2011 +0100
+
+    Fix a runtime warning.
+
+commit 0403cae96db2b44e5361c96f9a1d8d36922a4db2
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sat Feb 12 16:26:59 2011 +0100
+
+    First stab at tray icon.
+
+commit acebbb960fcb7b8aa562292e6e6b6391818baa01
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Feb 10 23:59:33 2011 +0100
+
+    Last ChangeLog update for 1.0.
+
+commit a0341543c2e0f1e008d798d70f9d80c89ba6cc81
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Feb 10 23:52:15 2011 +0100
+
+    Make debian packaging lintian conform.
+
+commit ec91795dc79e5d31a4122a9a1853caed9696cffb
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Feb 10 23:42:35 2011 +0100
+
+    Small fix to manpage.
+
+commit 8702b40b71698e30aa7bc65329ecfe9df5e9e0ce
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Feb 10 23:31:27 2011 +0100
+
+    Update ChangeLog.
+
+commit 794c2ddd6c60620608d68aa9bfca2e6dcc8288cd
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Feb 10 23:27:08 2011 +0100
+
+    Bring manpage up to date.
+
+commit f56f54fb5862042f300ff51713a03beede912f25
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Feb 10 23:21:34 2011 +0100
+
+    Update debian packaging.
+
+commit 725f8727a07e1385e8c16b01db93ff6878165254
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Feb 10 23:12:54 2011 +0100
+
+    Raise version to 1.0
+
+commit d1542b0893a6f99fda8a79526b7a035be3997b35
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Feb 10 23:12:11 2011 +0100
+
+    Raise GTK version requirement.
+
+commit 94486f4aa9588565bddaa9684ae85a4c5a8db63d
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Mon Jan 31 19:41:48 2011 +0100
+
+    Adapt to changed GTK3 API.
+
+commit a3e8cbd1505fbd86e2e36e29136c90d5ee43cb3d
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Jan 27 18:14:09 2011 +0100
+
+    Use a PNG icon instead of XPM.
+
+commit 29ae56a653fb8e5b486f7356b9c6e708740713e6
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Jan 27 17:44:26 2011 +0100
+
+    Adapt README, update NEWS.
+
+commit 62df11b02a8ec9d0c7a345a2dfe5236e6da631a2
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Jan 27 16:41:03 2011 +0100
+
+    Turn of anti-aliasing when running non-composited.
+
+commit de2613eae0214082c75d8132060ab1680aa084e2
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Jan 27 16:04:03 2011 +0100
+
+    Remove commented out code.
+
+commit 39f9608635e15257e8fc5f802be18ecfaac33ec7
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Jan 27 16:01:52 2011 +0100
+
+    Rename data->shape.
+
+commit 232007b03a78a0acef6b67ab73c7b44323a4bdc8
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Jan 27 15:56:44 2011 +0100
+
+    Rename shape_gc and fg_color.
+
+commit 709a2a77937ea1214de8f2cda6ed697ac590fd11
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Jan 27 15:47:10 2011 +0100
+
+    Remove unneeded define.
+
+commit 37b30ef249b09fa2ce06e697cbccba07158eb0f7
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Jan 27 14:11:16 2011 +0100
+
+    Handle compositing support change. Invalidate window when needed.
+
+commit 2f0528a2bafb056d2afaf709f16bcf6f164d5c03
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Jan 27 00:02:55 2011 +0100
+
+    Remove obsolete README part.
+
+commit b146e4314763013f641beacddce367732bab386e
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Jan 27 00:00:00 2011 +0100
+
+    Set input shape mask every time we change the shape.
+
+commit 1d7c2acddf8508c8df3dc93f9329868584e21646
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Wed Jan 26 23:10:35 2011 +0100
+
+    Remove unneeded changing of window background colour.
+
+commit 46ab12cf8715b44fa6c4350fa2865fd0397bc5ea
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Wed Jan 26 22:42:47 2011 +0100
+
+    Fix some warnings.
+
+commit 0e649b7028edf37f44681729b42b703a8a861262
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Wed Jan 26 22:08:14 2011 +0100
+
+    Draw with 75% opacity to make annotations slightly transparent.
+
+commit 29013ae51a89c271a2d5eacc288c7148845b1217
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Wed Jan 26 21:12:57 2011 +0100
+
+    Make use of XCOMPOSITE where available. Really fast drawing!
+
+commit b88b4134ca0153ebe08f65c556fb16bf0e02ae67
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Wed Jan 26 21:07:36 2011 +0100
+
+    Update NEWS.
+
+commit 5e4b3f1b7c80ac34cd6fb862734ea9cc61f4855e
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Wed Jan 26 21:05:51 2011 +0100
+
+    Set drawn stuff transparent for input.
+
+commit 4cfaa61e1ffa77aa9c56da767ee29291331fd8e3
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Wed Jan 26 00:04:45 2011 +0100
+
+    Possibility to add an alpha channel to main window.
+
+commit 89c1985b87f62b71d5bbbc2be442ea0a6cc07550
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Tue Jan 25 19:39:16 2011 +0100
+
+    Update TODO.
+
+commit 34221c550a982294795b8c16282d69787ae31120
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Fri Jan 21 00:04:01 2011 +0100
+
+    Get rid of that extra drawing widget.
+
+commit a7aa282f51749ca99d5e7f22092ad90e602929f2
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Jan 20 23:46:33 2011 +0100
+
+    Update NEWS + TODO.
+
+commit 92cebc419ec2c0761f1d3ef69c7645a08e34d4ea
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Jan 20 23:01:08 2011 +0100
+
+    Get rid of one useless drawing context. Fix arrow drawing as well.
+
+commit 47bbd2706bb85bbcc0f59fa2451b4c910dbb52ad
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Jan 20 22:01:59 2011 +0100
+
+    Fix redraw after unhide.
+    
+    Before, everything was restored with the same colour.
+
+commit d31fded484482740dabc251ef21d45821dc202c2
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Jan 20 21:35:23 2011 +0100
+
+    Use right signal.
+
+commit 65834551d1c949cfbeceb1745139c7a8547df3f9
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Jan 20 20:38:43 2011 +0100
+
+    Update TODO.
+
+commit 80998c31107dd4fb26b08eb04b005e4ca7895971
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Jan 20 20:12:42 2011 +0100
+
+    refactor (once again)
+
+commit bc7a694ab9ce5883f526511d571697ec4cde99cf
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Jan 20 19:53:35 2011 +0100
+
+    Make it work after screen resize.
+
+commit 776f2279797fc742ca6e11456eb8826c05e2c921
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Jan 20 17:30:43 2011 +0100
+
+    Add some debug output.
+
+commit db0614a33fadaf428a8c65874760efd267d9c531
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Jan 20 17:11:48 2011 +0100
+
+    Another potential memleak.
+
+commit 1fdde85ed325f8b76c1bd77da4bad3a3b68ab01b
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Jan 20 17:06:56 2011 +0100
+
+    Plug memleak in shape combine.
+
+commit 5c867d636260157bf13f5ff048ee421dae6f5381
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Jan 20 17:00:48 2011 +0100
+
+    PLug memleak in device init.
+
+commit 6b2b04597990755f46aa9ea402e56f79cc5fa478
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Jan 20 16:45:10 2011 +0100
+
+    Update TODO.
+
+commit faa8f7c9023a062419322e7662ecbe6d79131b54
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Jan 20 16:22:24 2011 +0100
+
+    Make clear_screen() work again.
+
+commit 39b3029a711b20f2a50862749a82447a40e0b7be
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Jan 20 16:00:16 2011 +0100
+
+    Revert "Revert "Zero devdata->motion_time on ungrab.""
+    
+    This reverts commit baec3333beb16b5746b85f392889fef54ee5293e.
+    
+    Ooops.
+
+commit 77e13e17511ce4e02b702c4403764ad8eb8e3c48
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Jan 20 15:56:12 2011 +0100
+
+    Fix typo.
+
+commit baec3333beb16b5746b85f392889fef54ee5293e
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Jan 20 15:54:44 2011 +0100
+
+    Revert "Zero devdata->motion_time on ungrab."
+    
+    This reverts commit ea3a22879686c1dd3f7042c2a6950289e5b50ac2.
+
+commit 517872da06bf419363ca26849c1040ee5f7741b5
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Jan 20 15:49:43 2011 +0100
+
+    The great big GTK3 compatibility commit.
+    
+    Hopefully the last one. Next for some cleanup.
+
+commit 68cf6140e77bb7d3d5dac432a9edb45fb1eaf77b
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Tue Nov 16 00:46:30 2010 +0100
+
+    Change hotkey to F9.
+
+commit ea3a22879686c1dd3f7042c2a6950289e5b50ac2
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Mon Nov 8 23:09:38 2010 +0100
+
+    Zero devdata->motion_time on ungrab.
+    
+    This works around a (gtk?) bug where after grab, ungrab, grab the
+    button down event is lost, letting gromit-mpx draw from last_*
+    coords (dating from before the ungrab) to current position. Gahh.
+
+commit 6a9ac468e278f4f9c704ea8693894d306b838a74
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Oct 21 19:31:11 2010 +0200
+
+    Fix crash on screen change.
+
+commit 4d84d1885a0c7ca59969d4adb6090d7ba37fe9f9
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Oct 21 19:11:44 2010 +0200
+
+    Big refactoring. Fix some memleaks, fewer LOC.
+
+commit 8933904af9a77f62d2f5df4ae0b9a87f5b97cab8
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Oct 21 18:00:31 2010 +0200
+
+    Some more UGLY workarounds.
+
+commit bc4ebd8d20d18d719c133adc0300c94544ebb33d
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Tue Oct 19 15:10:08 2010 +0200
+
+    Workaround buggy getting of attached keyboard via GDK.
+
+commit 02f54532eb5b97bfee37379f84d2bbdcf3d74082
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Tue Oct 19 13:00:11 2010 +0200
+
+    Make cursor xpms const char*.
+
+commit f051158999b8961ec66d18abc6f24e118ef439bc
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Tue Oct 19 12:58:00 2010 +0200
+
+    Include hotspot in cursor xpm's.
+
+commit 82fa00996eb775c5631b1e3365d0b9d002614faf
+Merge: 3462a28 dfb94a9
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Tue Oct 19 12:55:15 2010 +0200
+
+    Merge branch 'master' of github.com:bk138/gromit-mpx
+
+commit 3462a2861b561fa3290cd13628ff12358329aec8
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Tue Oct 19 12:54:51 2010 +0200
+
+    Better cursors.
+
+commit dfb94a9bcb004559a4bd3f7a7448555fbee2eb6f
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Tue Oct 12 13:28:49 2010 +0200
+
+    Remove most of commented out code.
+
+commit 250be7259e513c199964684579d277b2721461d9
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Oct 7 15:35:13 2010 +0200
+
+    Update TODO.
+
+commit 7c788f840478245fc3c816d42bbb41fc9fd48053
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Mon Sep 6 18:07:27 2010 +0200
+
+    Move config file related define to config.h
+
+commit a335295f88b826d9e40d54e5551ce66ac9a3325c
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Mon Sep 6 17:58:28 2010 +0200
+
+    Remove gromit_ prefix from all functions.
+
+commit 1e186a1b3d3b9f235a8b0a8bc4b7ea539b095096
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Mon Sep 6 17:47:48 2010 +0200
+
+    Some more cleanup.
+
+commit 4a30de31a5b8576d651aa6951cb728ea481e3747
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Mon Sep 6 17:41:48 2010 +0200
+
+    Better callback function names.
+
+commit a14109e6965fe7b0850e21e557ff3c9d78961d99
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Mon Sep 6 17:25:46 2010 +0200
+
+    Make colour change on modifier keys when mouse button down and moving.
+
+commit 4902110671d6056884f6899b9520202e5c7e452e
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Mon Sep 6 17:17:08 2010 +0200
+
+    Update TODO.
+
+commit a09faa7341e408c572344ee0d241611cb8710425
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Mon Sep 6 17:04:55 2010 +0200
+
+    Workaround grey line being drawn on startup.
+
+commit 7e77e0cebbb82546f073ec74e9a6e98bd155743d
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Mon Sep 6 15:15:08 2010 +0200
+
+    Workaround broken device cursor setting.
+
+commit 64470a84b61902d03ca4286a6f39804d509c7ae0
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sat Sep 4 16:59:16 2010 +0200
+
+    Make Eraser work again. But cursor still not changed. GTK bug?
+
+commit ba8ad5d48cae735b5cbc1d078f052c3c51d7f4dd
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Sat Sep 4 16:39:38 2010 +0200
+
+    Re-add some formerly removed lines as comments.
+
+commit 6927a26c64c21d73de4e03a4e2c6aa1cf8c4d405
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Fri Sep 3 18:49:44 2010 +0200
+
+    Some debug output.
+
+commit 58abfab08255669f5482b5cfeb35f1c42c58602c
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Fri Sep 3 18:32:30 2010 +0200
+
+    First early stab at porting to Cairo.
+    
+    TODO:
+     * eraser
+     * clean startup without grey line
+     * code cleanup
+
+commit 583c9782d074603e22bd9ccea132e38420a08a36
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Tue Jun 22 14:22:34 2010 +0200
+
+    Update manpage.
+
+commit b4e3f55b3304bc82db2bcc27527cbba8a9066e51
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Tue Jun 22 14:13:22 2010 +0200
+
+    Add debian packaging.
+
+commit 3bd11f237a490bc64a7acc4cbc1f8ebbc81c8c4f
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Tue Jun 22 14:11:36 2010 +0200
+
+    Add .desktop file and icon, rename config file.
+
+commit b5aff5e7687dcc425cd5df27bd661fc328a8c3eb
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Tue Jun 15 14:18:43 2010 +0200
+
+    Use GTK/GDK accessor functions throughout the code.
+
+commit 9be68d0ef0c1f6563987ccc63b71fb8db84fa5fc
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Fri Jun 11 16:02:44 2010 +0200
+
+    Act on master pointer add or removal.
+
+commit 6d495414eb1a4d3329d5af02330364e5d8192db7
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Wed Jun 2 17:14:35 2010 +0200
+
+    Re-add gromit_select_tool() call to paintto().
+
+commit e922ef293f2b6667eadf675012d7800fef3decdb
+Merge: 376e0d6 cf273c5
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Wed Jun 2 16:39:15 2010 +0200
+
+    Merge branch 'master' of github.com:bk138/gromit-mpx
+    
+    Resolved conflicts:
+            TODO
+
+commit 376e0d6179635ced4c8d9724727d6d8764984f94
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Wed Jun 2 16:36:11 2010 +0200
+
+    Grab hotkey per-device!
+    
+    With XIAllMasterDevices it doesn't seem to work. Anyway, we now have
+    per-device hotkey handling!
+
+commit 5d177b7d072ed6aae32ff2eeb581aca64f5c6f52
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Wed Jun 2 14:19:12 2010 +0200
+
+    Revert "Remove XInput stuff from build system."
+    
+    This reverts commit fc6841192289a53dd7682053c1171c15051c7d83.
+
+commit cf273c5558f3638c2095ebb78ef48571b6d53a0b
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu May 27 20:59:29 2010 +0200
+
+    Update README and TODO.
+
+commit 6d0f5822e14ffb9dc59bbdcb08f765f64fd7f639
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Wed May 26 15:32:02 2010 +0200
+
+    Change some C++ style comments to proper C style.
+
+commit 647543d90735ab5d25190581d615fbaa5f4d9e35
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Tue May 25 16:14:20 2010 +0200
+
+    Change toggle_grab() to take a GdkDevice* arg.
+    
+    And fix a segfault in gromit_acquire_grab().
+
+commit 99222701a808ca7b0dc23b8f7148abb82ed3099b
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Tue May 25 15:07:15 2010 +0200
+
+    Add device getter to hotkey handler.
+
+commit cf80650446a00c5b64a3477ee9d42ac8921b1cf8
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Tue May 25 13:39:44 2010 +0200
+
+    Update TODO.
+
+commit fc6841192289a53dd7682053c1171c15051c7d83
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Tue May 25 12:41:43 2010 +0200
+
+    Remove XInput stuff from build system.
+
+commit dbe41ece078af8b2863b2aadc4f310d4f3e1442b
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Tue May 25 12:39:17 2010 +0200
+
+    Split out config file parsing into extra files.
+
+commit 6bacd6064d82ccb1701e84492caf35dd6716ffad
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Tue May 25 11:59:32 2010 +0200
+
+    Change cursor whith the grab call.
+
+commit a50f3944d20c89655fd8283c0d1bd79f32e782a1
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Tue May 25 11:37:52 2010 +0200
+
+    Really fix device indexing.
+
+commit 6844981cea48e9e2ef0a27adddd3993ed6881895
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Tue May 25 11:09:56 2010 +0200
+
+    Remove last Xinput remnants.
+
+commit c1f977b83af3ae6531b2724158c95e9155fac6d4
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Tue May 25 10:58:18 2010 +0200
+
+    Adapt grab index to device order.
+
+commit c3d87b89029c615d799bf2c2180fde1c997defd2
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Tue May 25 10:39:43 2010 +0200
+
+    Use GDK cursors again.
+
+commit 21bc55cf904039fe4662a7c350a05b3ac83baf86
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Tue May 25 10:28:51 2010 +0200
+
+    Re-enable gdk_device_get_history() usage.
+
+commit 11b4b8b9c2f19989c787ece8b69991b5d3fb6278
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Tue May 25 09:20:36 2010 +0200
+
+    Remove device_id member from device data.
+
+commit 68e905e0cc2f534c346789e503f50df8c70b77d1
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Tue May 25 09:19:53 2010 +0200
+
+    Add -DGTK_MULTIDEVICE_SAFE to CFLAGS.
+
+commit 87c5e7c7913b52ed80c7ea41a2c3a9ce752c91d9
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Tue May 25 00:44:32 2010 +0200
+
+    Make it build with GTK3.
+
+commit 52a68771f0bb7d51234586d51c8ad7948a7a4cd2
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Mon May 24 23:10:33 2010 +0200
+
+    Raise GTK+ requirement to GTK+-3.0.
+
+commit 50345a3eecc17281c9c8e5568e931fe14f6cd6d7
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Apr 15 23:02:11 2010 +0200
+
+    More README updates.
+
+commit 41c1569edfa93e7a0fc375842e2251410a8ff733
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Apr 15 22:53:48 2010 +0200
+
+    Update ChangeLog.
+
+commit 9dc89a7bde08a6ca68e8029867cad00b1b4ed567
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Apr 15 22:53:28 2010 +0200
+
+    Really update README.
+
+commit 5b1849c033f60e942cc708e6476a33cad00f5299
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Apr 15 22:46:57 2010 +0200
+
+    Update README.
+
+commit d94add6dfeb8de6f176c4b423cc26f84db807305
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Nov 19 01:34:29 2009 +0100
+
+    some more callback refactoring.
+
+commit 27056d1ee8ce1d8b6215de685427e5ffb9ba8911
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Nov 19 01:26:23 2009 +0100
+
+    move callbacks into seperate files.
+
+commit 4ec7362f6e84c6845211cb19703e2a4ee0766c0e
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu Nov 19 00:51:10 2009 +0100
+
+    autotoolize!
+
+commit 0158463b8a718d88e7c897d6e429e31c3e26cbda
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Wed Nov 18 23:57:26 2009 +0100
+
+    remove gtk patch.
+
+commit ae96f1a94aad3b1e66717e25d0eb8b033ef68987
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Wed Nov 18 23:57:01 2009 +0100
+
+    support changing screen dimension.
+
+commit 45c0bbc6b6f05c2ba7e9de584f7640197922a0b5
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Wed Nov 18 23:38:40 2009 +0100
+
+    Makefile: add etags target.
+
+commit 6426d49246c8d86d2e76520f146fbf00045710bd
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Fri Aug 21 00:50:07 2009 +0200
+
+    rename gromit.c to gromit-mpx.c
+
+commit f455a1d0eee7760f47ff703b3b0fa0d482b73bdb
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Wed Jul 8 15:47:11 2009 +0200
+
+    only toggle virtual core pointer if hotkey pressed.
+
+commit bc2adc0875d704ba2565971aefc2171d5dfeee96
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Mon Jul 6 17:11:00 2009 +0200
+
+    port over to XI2.
+
+commit 47aaec03698268601e33388e9fd9fbdbf51a819e
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Tue Jun 30 19:14:29 2009 +0200
+
+    add gdk patch to repo.
+
+commit 26c3ca9e307901c24fa46cb6ea81e0591c5a07ef
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Fri May 15 00:00:11 2009 +0200
+
+    remove select_tool() call in paintto().
+    
+    gtk doesn't seem to set the button masks in event state,
+    so we would always revert to standard tool again if the
+    pointer moves. makes it now inpossible to draw multi-
+    coloured lines, but so what....
+
+commit ea07f5d4aebbc2aeb176f6d80a63632442688b61
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu May 14 23:31:59 2009 +0200
+
+    add myself to copyright (c).
+
+commit de60cd8a7f78b285860e9fbda49a3b95f3f14dda
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu May 14 23:31:34 2009 +0200
+
+    add notes about gtk patch.
+
+commit db3f29f613770c4ddfc14e6578a425ce3f52d604
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu May 14 23:26:51 2009 +0200
+
+    add README.MPX
+
+commit 61b14d252566dc4b91d53a6681392bc0e5f1750d
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu May 14 23:13:00 2009 +0200
+
+    remove all XINPUT2 ifdefs. we're gromit-mpx anyway!
+    
+    for pre-XI2, people can use the original gromit...
+
+commit 11dd8860942c986d1aa2d5b2f0e3beb277c72d08
+Author: Christian Beier <dontmind@freeshell.org>
+Date:   Thu May 14 21:14:15 2009 +0200
+
+    initial import.

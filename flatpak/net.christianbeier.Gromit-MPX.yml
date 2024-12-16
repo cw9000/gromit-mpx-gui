@@ -1,0 +1,50 @@
+id: net.christianbeier.Gromit-MPX
+runtime: org.gnome.Platform # using GNOME for the time being as we need dconf for setting hotkeys under Wayland
+runtime-version: '46'
+sdk: org.gnome.Sdk
+command: gromit-mpx
+finish-args:
+  - --socket=x11
+  - --share=ipc
+  # needed to show appindicator in Ubuntu
+  - --talk-name=org.kde.StatusNotifierWatcher
+  # this is the dconf hole for setting hotkeys under Wayland
+  - --filesystem=xdg-run/dconf
+  - --filesystem=~/.config/dconf:ro
+  - --talk-name=ca.desrt.dconf
+  - --env=DCONF_USER_CONFIG_DIR=.config/dconf
+  - --env=GIO_EXTRA_MODULES=/app/lib/gio/modules/
+modules:
+  - shared-modules/libappindicator/libappindicator-gtk3-12.10.json
+  # ship media-keys schema for settings hotkeys under Wayland
+  - name: media-keys
+    buildsystem: simple
+    build-commands:
+      - install -D data/org.gnome.settings-daemon.plugins.media-keys.gschema.xml.in /app/share/glib-2.0/schemas/org.gnome.settings-daemon.plugins.media-keys.gschema.xml
+      - sed -i -e 's/@GETTEXT_PACKAGE@/gnome-settings-daemon/g' /app/share/glib-2.0/schemas/org.gnome.settings-daemon.plugins.media-keys.gschema.xml
+      - glib-compile-schemas /app/share/glib-2.0/schemas
+    sources:
+      - type: archive
+        url: https://download.gnome.org/sources/gnome-settings-daemon/46/gnome-settings-daemon-46.0.tar.xz
+        sha256: 0b9a0f64fa18a8e7e09b4c95a3f754fa033c2cdbd2dc35701f0618572c1cb3d7
+  - name: dconf
+    buildsystem: meson
+    config-opts:
+      - -Dbash_completion=false
+      - -Dman=false
+    cleanup:
+      - /include
+      - /lib/pkgconfig
+      - /libexec
+      - /share/dbus-1
+    sources:
+      - type: archive
+        url: https://download.gnome.org/sources/dconf/0.40/dconf-0.40.0.tar.xz
+        sha256: cf7f22a4c9200421d8d3325c5c1b8b93a36843650c9f95d6451e20f0bcb24533
+      - type: patch
+        path: dconf-override.patch
+  - name: gromit-mpx
+    buildsystem: cmake-ninja
+    sources:
+      - type: dir
+        path: ..

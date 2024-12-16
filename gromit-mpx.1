@@ -1,0 +1,154 @@
+.\"                                      Hey, vim: ft=nroff
+.TH GROMIT-MPX 1 "November 3, 2018"
+.\" Please adjust this date whenever revising the manpage.
+.\"
+.\" Some roff macros, for reference:
+.\" .nh        disable hyphenation
+.\" .hy        enable hyphenation
+.\" .ad l      left justify
+.\" .ad b      justify to both left and right margins
+.\" .nf        disable filling
+.\" .fi        enable filling
+.\" .br        insert line break
+.\" .sp <n>    insert n+1 empty lines
+.\" for manpage-specific macros, see man(7)
+.SH NAME
+Gromit-MPX \- Presentation helper to make annotations on screen
+.SH SYNOPSIS
+.B gromit\-mpx
+.RI [ options ]
+.br
+.SH DESCRIPTION
+\fBGromit-MPX\fP enables you to make multi-pointer annotations on your screen. It can run in
+the background and be activated on demand to let you draw over all your
+currently running applications. The drawing will stay on screen as long as you
+want, you can continue to use your applications while the drawing is visible.
+.br
+\fBGromit-MPX\fP is XInput-Aware, so if you have a graphic tablet you can
+draw lines with different strength, colour, erase things, etc.
+.br
+Since you typically want to use the program you are demonstrating and
+highlighting something is a short interruption of you workflow,
+Gromit-MPX is activated by either a hotkey or a repeated invocation of Gromit-MPX
+(the latter can e.g. used by other applications or your windowmanager).
+.br
+.SH KEYBOARD CONTROL
+By default, Gromit-MPX grabs the "F9" key (this can be changed using the
+"\-\-key" option), making it unavailable to other application. The
+available shortcuts are:
+.TP
+.B F9
+toggle painting
+.TP
+.B SHIFT-F9
+clear screen
+.TP
+.B CTRL-F9
+toggle visibility
+.TP
+.B ALT-F9
+quit Gromit-MPX
+.PP
+.SH OPTIONS (STARTUP)
+A short summary of the available commandline arguments for invoking Gromit-MPX, see
+below for the options to control an already running Gromit-MPX process:
+.TP
+.B \-a, \-\-active
+start Gromit-MPX and immediately activate it.
+.TP
+.B \-d, \-\-debug
+gives some debug output.
+.TP
+.B \-k <keysym>, \-\-key <keysym>
+will change the key used to grab the mouse. <keysym> can e.g. be
+"F9", "F12", "Control_R" or "Print". To determine the keysym for
+different keys you can use the \fBxev\fP(1) command. You can specify "none"
+to prevent Gromit-MPX from grabbing a key.
+.TP
+.B \-K <keycode>, \-\-keycode <keycode>
+will change the key used to grab the mouse. Under rare circumstances
+identifying the key with the keysym can fail. You can then use the keycode
+to specify the key uniquely. To determine the keycode for different keys you
+can use the \fBxev\fP(1) command.
+.TP
+.B \-o, \-\-opacity <value>
+will set the initial opacity of the window using a floating point value between 0 and 1.
+.TP
+.B \-u <keysym>, \-\-undo\-key <keysym>
+will change the key used to undo/redo strokes. <keysym> can e.g. be
+"F9", "F12", "Control_R" or "Print". To determine the keysym for
+different keys you can use the \fBxev\fP(1) command. You can specify "none"
+to prevent Gromit-MPX from grabbing a key.
+.TP
+.B \-U <keycode>, \-\-undo\-keycode <keycode>
+will change the key used to undo/redo strokes. Under rare circumstances
+identifying the key with the keysym can fail. You can then use the keycode
+to specify the key uniquely. To determine the keycode for different keys you
+can use the \fBxev\fP(1) command.
+.TP
+.B \-V, \-\-version
+will show the Gromit-MPX version.
+.SH OPTIONS (CONTROL)
+A sort summary of the available commandline arguments to control an already
+running Gromit-MPX process, see above for the options available to start Gromit-MPX.
+.TP
+.B \-c, \-\-clear
+will clear the screen.
+.TP
+.B \-q, \-\-quit
+will cause the main Gromit-MPX process to quit.
+.TP
+.B \-t, \-\-toggle
+will toggle the grabbing of the cursor.
+.TP
+.B \-v, \-\-visibility
+will toggle the visibility of the window.
+.TP
+.B \-y, \-\-redo
+will redo the last undone drawing stroke.
+.TP
+.B \-z, \-\-undo
+will undo the last drawing stroke.
+.SH ENVIRONMENT
+.TP
+.B XDG_CURRENT_DESKTOP
+Gromit-MPX uses this to determine which desktop environment it is running on.
+.TP
+.B XDG_CURRENT_SESSION
+Gromit-MPX uses this to determine whether is is running under X11 or Wayland.
+.TP
+.B XDG_CONFIG_HOME
+Directory to search for user's custom configuration file, defaults to
+.BI ~ /.config/ .
+.TP
+.B GDK_CORE_DEVICE_EVENTS
+If set, GDK does not use the XInput extension and only reacts to core X input events.
+This renders Gromit-MPX unusable, it will detect this and bail out with an error message.
+.SH FILES
+.TP
+.I gromit\-mpx.cfg
+Configuration file which defines pens and maps mouse buttons and
+modifiers to them. Searched for in user's custom configuration file
+directory and, if not found there, in
+.IR /etc/gromit\-mpx/ .
+.SH BUGS
+When there is no compositing manager such as Compiz, xcompmgr or Mutter
+running, Gromit-MPX falls back to a legacy drawing mode. This may
+drastically slow down your X-Server, especially when you draw very
+thin lines. It makes heavy use of the shape extension, which is
+quite expensive if you paint a complex pattern on screen. Especially
+terminal-programs tend to scroll incredibly slow if something is
+painted over their window.
+
+XFCE per default grabs Ctrl-F1 to Ctrl-F12 (switch to workspace 1-12)
+and Alt-F9 (minimize window) which renders Gromit-MPX's default hotkey
+mapping unusable. Gromit-MPX detects XFCE and changes the default hotkeys
+to Home and End. Those can can still be overridden by the user.
+
+.SH AUTHORS
+Simon Budig <simon@gimp.org>
+Christian Beier <info@christianbeier.net>
+.PP
+This manual page was written by Pierre Chifflier <chifflier@cpe.fr> and
+Simon Budig for the original Gromit and extended for Gromit-MPX by
+Christian Beier.

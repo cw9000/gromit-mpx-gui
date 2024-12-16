@@ -1,0 +1,43 @@
+
+{"version": "2.0.0",
+"tasks": [
+	{
+		"label": "CMake Build",
+		"type": "shell",
+		"command": "cmake",
+		"args": [
+			".."
+		],
+		"options": {
+			"cwd": "${workspaceFolder}/build"
+		},
+		"group": {
+			"kind": "build",
+			"isDefault": true
+		},
+		"problemMatcher": []
+	},
+	{
+		"label": "Make",
+		"type": "shell",
+		"command": "make",
+		"args": [],
+		"options": {
+			"cwd": "${workspaceFolder}/build"
+		},
+		"group": {
+			"kind": "build",
+			"isDefault": false
+		},
+		"problemMatcher": []
+	},
+	{
+		"label": "Build All",
+		"dependsOn": ["CMake Build", "Make"],
+		"group": {
+			"kind": "build",
+			"isDefault": true
+		}
+	}
+]
+}
